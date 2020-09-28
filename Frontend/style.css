@@ -3,7 +3,10 @@ body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
 }
+
 .card-container {
   width: 100%;
   display: flex;
@@ -12,7 +15,7 @@ body {
 
 .empty_div {
   position: relative;
-  display: block;
+  
 }
 .event_card {
   display: flex;
@@ -45,7 +48,7 @@ body {
 .date:nth-child(2){
     margin-bottom: 20px;
 }
-.event_details{
+.event_details{   
     display: flex;
     flex-direction: column;
 }
@@ -70,11 +73,94 @@ footer {
   width: 100%;
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: relative;
   bottom: 0;
   top: 100%;
   justify-content: center;
   align-items: center;
   padding: 40px;
-  background-color: yellow;
+}
+                          /* Media Qeries */
+
+@media only screen and (min-width:240px) and (max-width:375px){
+
+  .container-fluid{
+   margin:5%;
+  }
+
+  .event_card::before{
+    top: 24px;
+    left: 46%;
+  }
+  .event_card{
+    width: 250px;
+    height:300px;
+    padding:19px;
+  }
+  .date{
+    color: grey;
+    margin-top: 10px;
+  }
+  .date:nth-child(2){
+    margin-bottom: 10px;
+  }
+  .event_title{
+    margin:0;
+    font-size:25px;
+  }
+  .event_details{
+    font-size: 15px;
+  }
+  .link{
+    margin-top: 0px;
+  }
+}
+
+        /* 376 to 450px */
+@media only screen and (min-width:376px) and (max-width:450px){
+  .container-fluid{
+    margin:5%;
+  }
+  .event_card{
+    padding:19px;
+    margin-right:25px;
+  }
+  .event_card::before{
+    top: 22px;
+    left: 48%;
+  }
+} 
+
+        /* 451px tp 750px */
+@media only screen and (min-width:451px) and (max-width:750px){
+  .event_card{
+    padding:2px;
+    width:250px;
+    height:250px;
+    margin-left:19%;
+  }
+  .event_card::before{
+    top: 22px;
+    left: 60%;
+  }
+  .event_title{
+    margin-top:0%;
+    margin-bottom:0;
+  }
+  .event_details{
+    font-size: 15px;
+  }
+  .date{
+    margin-top:8px;
+  }
+  .date:nth-child(2){
+    margin-bottom: 8px;
+  }
+  .orgaisation{
+    margin: 0;
+  }
+  .location{
+    margin:0;
+  }
+  
 }
