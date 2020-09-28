@@ -53,6 +53,7 @@ fetch("../data/events.json")
       eventCard.append(eventTitle, eventDetails);
       emptyDiv.appendChild(eventCard);
       cardContainer.appendChild(emptyDiv);
+      checkForFilled();
     }
   });
 
