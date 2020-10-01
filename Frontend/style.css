@@ -7,6 +7,8 @@ body {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+ 
+
 }
 .empty_div {
   position: relative;
@@ -19,7 +21,7 @@ body {
   border-radius: 5px;
   padding: 30px;
   align-items: center;
-  margin: 30px;
+  margin:30px;
   width: 300px;
   word-wrap: break-all;
   cursor: pointer;
@@ -68,8 +70,29 @@ footer {
   display: flex;
   flex-direction: column;
   position: absolute;
-  bottom: 0;
-  top: 100%;
+  bottom: 0%;
+  top:100%;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width:760px){
+  .card-container{
+    justify-content: center;
+  }
+  .event_card{
+    
+    width:300px;
+    }
+  footer{
+    position:sticky;
+    bottom:0%;
+    padding-top:30px;
+    padding-bottom:2%;
+  }
+  
+}
+@media screen and (max-width:320px){
+  footer{
+    font-size:0.9rem;
+  }
 }
