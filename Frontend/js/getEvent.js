@@ -53,18 +53,7 @@ fetch("../data/events.json")
       eventCard.append(eventTitle, eventDetails);
       emptyDiv.appendChild(eventCard);
       cardContainer.appendChild(emptyDiv);
-      checkForFilled();
     }
+    document.getElementsByTagName('footer')[0].style="top:auto;";
   });
-
-function checkForEmpty(){
-  if($('.card-container').is(':empty')){
-    $('footer').css('top','100%');
-  }
-}
-function checkForFilled(){
-  if(! $('.card-container').is(':empty')){
-    $('footer').css('top','auto');
-  }
-}
-checkForEvents();
+  
