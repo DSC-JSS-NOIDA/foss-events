@@ -81,9 +81,28 @@ footer {
       padding: 60px;
       width: 100%;
       display: flex;
+      position: absolute;
       flex-direction: column;
       bottom: 0;
       top: 100%;
       justify-content: center;
       align-items: center;
+}
+
+ /* added media query for reponsiveness in mobile view */
+
+@media(max-width:550px){
+      footer {
+            border-top: 2px solid rgba(0, 0, 0, 0.125);
+            padding-top: 30px;
+            padding-bottom: 30px;
+            width: 100%;
+            display: flex;
+            position: static;
+            flex-direction: column;
+            bottom: 0;
+            top: 100%;
+            justify-content: center;
+            align-items: center;
+      }
 }
