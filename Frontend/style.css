@@ -3,10 +3,24 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
+
+.my-bg {
+  background-color: #0b3968!important;
+}
+
+/* The sticky class is added to the navigation with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+
 .card-container {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  /* background-color: red; */
 }
 .empty_div {
   position: relative;
@@ -19,12 +33,15 @@ body {
   border-radius: 5px;
   padding: 30px;
   align-items: center;
-  margin: 30px;
+  margin: 45px;
   width: 300px;
   word-wrap: break-all;
   cursor: pointer;
   transition: all 0.5s ease;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
 }
+
 .event_card::before {
   content: "";
   width: 15px;
@@ -72,4 +89,5 @@ footer {
   top: 100%;
   justify-content: center;
   align-items: center;
+  background-color: #e0d7d7;
 }

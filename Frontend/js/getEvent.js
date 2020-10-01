@@ -26,7 +26,7 @@ fetch("../data/events.json")
         href: `https://${res[data].website}`,
         target: "_blank",
         rel: "noopener noreferrer",
-        className:'btn btn-primary link'
+        className:'btn btn-outline-primary'
       });
       let link = document.createElement("h6");
       link.innerText = "More Info";
