@@ -8,7 +8,7 @@ body {
 .card-container {
      width: 100%;
      display: flex;
-     margin-left: 40px;    
+     margin-left: 2.5rem;    
      flex-wrap: wrap;
      margin-bottom:150px;
      
@@ -22,10 +22,10 @@ body {
     justify-content: center;
     border: 2px solid rgba(0, 0, 0, 0.125);
     border-radius: 5px;
-    padding: 30px;
+    padding: 1.875rem;
     align-items: center;
-    margin:30px;
-    width:300px;
+    margin:1.875rem;
+    width:18.75rem;
     word-wrap: break-all;
     cursor: pointer;
     transition: all 0.5s ease;
@@ -34,8 +34,8 @@ body {
   }
   .event_card::before {
     content: "";
-    width: 15px;
-    height: 15px;
+    width: 0.9375rem;
+    height: 0.9375rem;
     background-color: #5cb85c;
     border-radius: 100%;
     position: absolute;
@@ -83,7 +83,7 @@ body {
     padding-bottom:5px;
     align-items: center;
   }
-  @media screen and (max-width:768px){
+  @media screen and (max-width:48rem){
     .card-container{
         align-items: center;
         justify-content: center;
