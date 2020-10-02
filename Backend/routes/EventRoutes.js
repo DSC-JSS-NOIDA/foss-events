@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const mongoose = require("mongoose");
+const events = require('../models/events');
 const event = require("../models/events");
 const auth = require("./users/auth");
 
@@ -43,7 +44,7 @@ router.get("/:title", async (req, res) => {
 
 // post request for adding event
 // data required in the request body- title, date, website, details
-router.post("/addroom", auth, async (req, res) => {
+router.post('/addevent', auth, async (req, res) => {
   try {
     const { title, date, website, details } = req.body;
     const newEvent = new events({
@@ -69,6 +70,46 @@ router.post("/addroom", auth, async (req, res) => {
 
 // UPDATE ROUTES
 // All the update routes will be written here
+
+//This route will edit particular event
+router.put('/edit/:title', async (req, res) => {
+  const event = req.params.title;
+  events.findOne({ title: event }, (err, eve) => {
+    if (err) {
+      res.json({ error: true, message: `Error while finding this event`, errMessage: err });
+    } else if (eve) {
+
+      const { title, date, website, details } = req.body;
+      eve.title = title != "" ? title : eve.title;
+      eve.date = date != "" ? date : eve.date;
+      eve.website = website != "" ? website : eve.website;
+      eve.details = details != "" ? details : eve.details;
+      eve.save((err, result) => {
+        if (err) {
+          res.json({
+            error: true,
+            message: err
+          });
+        } else if (result) {
+          res.json({
+            error: false,
+            message: "Event updated successfully",
+            title: result.title,
+            date: result.date,
+            website: result.website,
+            details: result.details,
+          });
+        } else {
+          res.json({
+            error: true,
+            message: 'Error updating event'
+          });
+        }
+      });
+    }
+  })
+})
+
 
 //Delete Routes
 //All the delete routes will be written here
