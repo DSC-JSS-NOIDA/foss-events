@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foss Events</title>
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      .container-fluid {
+        padding: 60px 50px;
+      }
+      .panel {
+        border: 1px solid #0000cc; 
+        border-radius:0 !important;
+        transition: box-shadow 0.5s;
+      }
+      
+      .panel-footer .btn:hover {
+        border: 1px solid #0000cc;
+        background-color: #fff !important;
+        color: #f4511e;
+      }
+      .panel-heading {
+        color: #fff !important;
+        background-color: #9999ff !important;
+        padding: 25px;
+        border-bottom: 1px solid transparent;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+      }
+      .panel-footer {
+        background-color: white !important;
+      }
+      .panel-footer h3 {
+        font-size: 32px;
+      }
+      .panel-footer h4 {
+        color: #aaa;
+        font-size: 14px;
+      }
+      .panel-footer .btn {
+        margin: 15px 0;
+        background-color: #9999ff;
+        color: #fff;
+      }
+    
+    
+      .flip-card {
+      background-color: transparent;
+      width: 300px;
+      height: 300px;
+      perspective: 1000px;
+    }
+    
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+    
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+    
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+    
+    .flip-card-front {
+      background-color: #bbb;
+      color: black;
+    }
+    
+    .flip-card-back {
+      background-color: #2980b9;
+      color: white;
+      transform: rotateY(180deg);
+    }
+    
+    /* Create three equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 40px;
+      height: 300px; /* Should be removed. Only for demonstration */
+    }
+      
+      </style>
+  </head>
+  <body>
+    <!-- Navbar Starts -->
+    <nav class="navbar navbar-light bg-dark">
+      <a class="navbar-brand text-white" href="#">FossEvents</a>
+
+      <a
+        href="https://github.com/DSC-JSS-NOIDA"
+        target="_blank"
+        style="text-decoration: none; color: black"
+        ><i class="fa fa-github" id="links" style="font-size: 36px"></i
+      ></a>
+    </nav>
+    <!-- Navbar Ends -->
+
+    <!-- Main Content -->
+    <div class="container-fluid mt-5">
+    <!-- Search Bar -->
+      <input class="container form-control" placeholder="Search for event here ...">
+      <!-- Card Container -->
+      <div class="card-container">
+        <!-- Container (Event Section) -->
+<div id="event" class="container-fluid">
+  <div class="text-center">
+    <h2>EVENTS</h2>
+  </div>
+  <div class="row">
+  <div class="column">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <div class="panel-heading">
+          <h1>Event 1</h1>
+        </div>
+      </div>
+      <div class="flip-card-back">
+        <div class="panel-body">
+          <p><strong>Start Date:</strong>dd/mm/yy</p>
+          <p><strong>Ends</strong> dd/mm/yy</p>
+        </div>
+        <div class="panel-footer">
+          <h3>Organisation:</h3>
+          <h4>Online</h4>
+          <button class="btn btn-lg">More info</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="column">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div class="panel-heading">
+            <h1>Event 2</h1>
+          </div>
+        </div>
+        <div class="flip-card-back">
+          <div class="panel-body">
+            <p><strong>Start Date:</strong>dd/mm/yy</p>
+            <p><strong>Ends</strong> dd/mm/yy</p>
+          </div>
+          <div class="panel-footer">
+            <h3>Organisation:</h3>
+            <h4>Online</h4>
+            <button class="btn btn-lg">More info</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="column">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="panel-heading">
+              <h1>Event 3</h1>
+            </div>
+          </div>
+          <div class="flip-card-back">
+            <div class="panel-body">
+              <p><strong>Start Date:</strong>dd/mm/yy</p>
+              <p><strong>Ends</strong> dd/mm/yy</p>
+            </div>
+            <div class="panel-footer">
+              <h3>Organisation:</h3>
+              <h4>Online</h4>
+              <button class="btn btn-lg">More info</button>
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
+
+
+</div>    
+
+</div>
+
+      </div>
+      <!-- Card-Container Ends -->
+    </div>
+
+
+    <!-- Main Content Ends -->
+
+    <!-- Footer starts -->
+    <footer>
+      <div class="footer">
+        Made with &#10084; By <a href="https://dscjss.in">DSC JSSATEN</a>
+        <a
+          href="https://github.com/dsc-jss-noida"
+          className=" text-black github-footer"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+        </a>
+      </div>
+      <img src="./Frontend/data/img/Main_logo.svg" className="mt-2" width="250" alt="" />
+    </footer>
+    <!-- Footer ends -->
+
+    <script src="./Frontend/js/getEvent.js"></script>
+    <!-- JS, Popper.js, and jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
