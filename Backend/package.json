@@ -29,5 +29,8 @@
     "morgan": "^1.10.0",
     "node-cache": "^5.1.2",
     "shortid": "^2.2.15"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1"
   }
 }
