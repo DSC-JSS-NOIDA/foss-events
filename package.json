@@ -2,7 +2,7 @@
   "name": "foss-events-master",
   "version": "1.0.0",
   "description": "<div align=\"center\"> <img align=\"center\" alt=\"dschackfest\" src=\"https://user-images.githubusercontent.com/42115530/94295926-a5741880-ff7f-11ea-890b-39ad20ac0f21.png\" height='150' width='350'></div>",
-  "main": "getEvent.js",
+  "main": "getEvent.js index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
