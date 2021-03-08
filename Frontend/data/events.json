@@ -57,7 +57,7 @@
   },
     {
     "title": "GIRLSCRIPT SUMMER OF CODE",
-    "website": "https://gssoc.girlscript.tech/",
+    "website": "gssoc.girlscript.tech/",
     "start": "10/03/2021",
     "end": "31/05/2021",
     "organisation": "GirlScript Foundation",
@@ -65,7 +65,7 @@
   },
   {
     "title":"Google Summer of Code",
-    "website":"https://summerofcode.withgoogle.com/",
+    "website":"summerofcode.withgoogle.com/",
     "start":"17/05/2021",
     "end":"23/08/2021",
     "organisation":"Multiple organisations like FOSSASIA,Redhat,ASF and many more ",  
