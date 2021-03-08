@@ -64,11 +64,27 @@
     "location": "Online"
   },
   {
-    "title":"Google Summer of Code",
-    "website":"https://summerofcode.withgoogle.com/",
-    "start":"17/05/2021",
-    "end":"23/08/2021",
-    "organisation":"Multiple organisations like FOSSASIA,Redhat,ASF and many more ",  
-    "location":"Online"
-  }
+    "title": "Rails Girls Summer of Code",
+    "website": "https://railsgirlssummerofcode.org/",
+    "start": "1/07/2021",
+    "end": "30/09/2021",
+    "organisation": "Travis Foundation",
+    "location": "Online"
+  },
+  {
+    "title": "MLH Fellowship",
+    "website": "https://fellowship.mlh.io/programs/explorer",
+    "start": "31/05/2021",
+    "end": "23/08/2021",
+    "organisation": "Major League Hacking",
+    "location": "Online"
+  },
+  {
+    "title": "Outreachy",
+    "website": "https://www.outreachy.org/",
+    "start": "24/05/2021",
+    "end": "24/08/2021",
+    "organisation": "Software Freedom Conservancy,
+    "location": "Online"
+  } 
 ]
