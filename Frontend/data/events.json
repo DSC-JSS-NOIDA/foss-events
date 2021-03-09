@@ -2,72 +2,72 @@
   {
     "title": "ACCELERATING DEVELOPMENT AND DEPLOYMENT OF OPEN SOURCE",
     "website": "www.opensourceindia.in",
-    "start": "08/10/20",
-    "end": "09/10/20",
+    "start": "10/08/2020",
+    "end": "10/09/2020",
     "organisation": "Open Source India",
     "location": "Online"
   },
   {
     "title": "Sunday JS: Getting to know JavaScript",
     "website": "www.meetup.com",
-    "start": "11/10/20 10:00 AM",
-    "end": "11/10/20 10:40 AM GMT+11",
+    "start": "10/11/2020",
+    "end": "10/11/2020",
     "organisation": "Sydney Volunteer Programmers",
     "location": "Online"
   },
   {
     "title": "FOSDEM 2021",
     "website": "www.fosdem.org/2021/",
-    "start": "06/02/21",
-    "end": "07/02/21",
+    "start": "02/06/2021",
+    "end": "02/07/2021",
     "organisation": "FOSDEM dev community at University Brussels (ULB)",
     "location": "Online"
   },
   {
     "title": "Codeheat",
     "website": "codeheat.org",
-    "start": "01/10/20",
-    "end": "01/06/21",
+    "start": "10/01/2020",
+    "end": "06/01/2021",
     "organisation": "FOSSASIA",
     "location": "Online"
   },
   {
     "title": "FOSSCOMM",
     "website": "2020.fosscomm.gr",
-    "start": "20/11/20",
-    "end": "22/11/20",
+    "start": "11/20/2020",
+    "end": "11/22/2020",
     "organisation": "University of Western Macedonia",
     "location": "Online"
   },
   {
     "title": "DevFest India",
     "website": "devfestindia.com/",
-    "start": "16/10/20",
-    "end": "18/10/20",
+    "start": "10/16/2020",
+    "end": "10/18/2020",
     "organisation": "Google",
     "location": "Online"
   },
     {
     "title": "All Things Open",
     "website": "2020.allthingsopen.org",
-    "start": "19/10/20",
-    "end": "20/10/20",
+    "start": "10/19/2020",
+    "end": "10/20/2020",
     "organisation": "All Things Open",
     "location": "Online"
   },
     {
     "title": "GIRLSCRIPT SUMMER OF CODE",
     "website": "https://gssoc.girlscript.tech/",
-    "start": "10/03/2021",
-    "end": "31/05/2021",
+    "start": "03/10/2021",
+    "end": "05/31/2021",
     "organisation": "GirlScript Foundation",
     "location": "Online"
   },
   {
     "title":"Google Summer of Code",
     "website":"https://summerofcode.withgoogle.com/",
-    "start":"17/05/2021",
-    "end":"23/08/2021",
+    "start":"05/17/2021",
+    "end":"08/23/2021",
     "organisation":"Multiple organisations like FOSSASIA,Redhat,ASF and many more ",  
     "location":"Online"
   }

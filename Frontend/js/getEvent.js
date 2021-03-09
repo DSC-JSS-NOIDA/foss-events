@@ -3,6 +3,7 @@ fetch("./Frontend/data/events.json")
   .then((res) => res.json())
   .then((res) => {
     let cardContainer = document.getElementsByClassName("card-container")[0];
+
     for (let data in res) {
       let emptyDiv = document.createElement("div");
       emptyDiv.className = "empty_div";
