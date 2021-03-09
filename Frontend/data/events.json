@@ -1,74 +1,161 @@
-[
-  {
-    "title": "ACCELERATING DEVELOPMENT AND DEPLOYMENT OF OPEN SOURCE",
-    "website": "www.opensourceindia.in",
-    "start": "08/10/20",
-    "end": "09/10/20",
-    "organisation": "Open Source India",
-    "location": "Online"
-  },
-  {
-    "title": "Sunday JS: Getting to know JavaScript",
-    "website": "www.meetup.com",
-    "start": "11/10/20 10:00 AM",
-    "end": "11/10/20 10:40 AM GMT+11",
-    "organisation": "Sydney Volunteer Programmers",
-    "location": "Online"
-  },
-  {
-    "title": "FOSDEM 2021",
-    "website": "www.fosdem.org/2021/",
-    "start": "06/02/21",
-    "end": "07/02/21",
-    "organisation": "FOSDEM dev community at University Brussels (ULB)",
-    "location": "Online"
-  },
-  {
-    "title": "Codeheat",
-    "website": "codeheat.org",
-    "start": "01/10/20",
-    "end": "01/06/21",
-    "organisation": "FOSSASIA",
-    "location": "Online"
-  },
-  {
-    "title": "FOSSCOMM",
-    "website": "2020.fosscomm.gr",
-    "start": "20/11/20",
-    "end": "22/11/20",
-    "organisation": "University of Western Macedonia",
-    "location": "Online"
-  },
-  {
-    "title": "DevFest India",
-    "website": "devfestindia.com/",
-    "start": "16/10/20",
-    "end": "18/10/20",
-    "organisation": "Google",
-    "location": "Online"
-  },
+[{
+        "title": "ACCELERATING DEVELOPMENT AND DEPLOYMENT OF OPEN SOURCE",
+        "website": "www.opensourceindia.in",
+        "start": "08/10/20",
+        "end": "09/10/20",
+        "organisation": "Open Source India",
+        "location": "Online"
+    },
     {
-    "title": "All Things Open",
-    "website": "2020.allthingsopen.org",
-    "start": "19/10/20",
-    "end": "20/10/20",
-    "organisation": "All Things Open",
-    "location": "Online"
-  },
+        "title": "Sunday JS: Getting to know JavaScript",
+        "website": "www.meetup.com",
+        "start": "11/10/20 10:00 AM",
+        "end": "11/10/20 10:40 AM GMT+11",
+        "organisation": "Sydney Volunteer Programmers",
+        "location": "Online"
+    },
     {
-    "title": "GIRLSCRIPT SUMMER OF CODE",
-    "website": "https://gssoc.girlscript.tech/",
-    "start": "10/03/2021",
-    "end": "31/05/2021",
-    "organisation": "GirlScript Foundation",
-    "location": "Online"
-  },
-  {
-    "title":"Google Summer of Code",
-    "website":"https://summerofcode.withgoogle.com/",
-    "start":"17/05/2021",
-    "end":"23/08/2021",
-    "organisation":"Multiple organisations like FOSSASIA,Redhat,ASF and many more ",  
-    "location":"Online"
-  }
+        "title": "FOSDEM 2021",
+        "website": "www.fosdem.org/2021/",
+        "start": "06/02/21",
+        "end": "07/02/21",
+        "organisation": "FOSDEM dev community at University Brussels (ULB)",
+        "location": "Online"
+    },
+    {
+        "title": "Codeheat",
+        "website": "codeheat.org",
+        "start": "01/10/20",
+        "end": "01/06/21",
+        "organisation": "FOSSASIA",
+        "location": "Online"
+    },
+    {
+        "title": "FOSSCOMM",
+        "website": "2020.fosscomm.gr",
+        "start": "20/11/20",
+        "end": "22/11/20",
+        "organisation": "University of Western Macedonia",
+        "location": "Online"
+    },
+    {
+        "title": "DevFest India",
+        "website": "devfestindia.com/",
+        "start": "16/10/20",
+        "end": "18/10/20",
+        "organisation": "Google",
+        "location": "Online"
+    },
+    {
+        "title": "All Things Open",
+        "website": "2020.allthingsopen.org",
+        "start": "19/10/20",
+        "end": "20/10/20",
+        "organisation": "All Things Open",
+        "location": "Online"
+    },
+    {
+        "title": "GIRLSCRIPT SUMMER OF CODE",
+        "website": "https://gssoc.girlscript.tech/",
+        "start": "10/03/2021",
+        "end": "31/05/2021",
+        "organisation": "GirlScript Foundation",
+        "location": "Online"
+    },
+    {
+        "title": "Google Summer of Code",
+        "website": "https://summerofcode.withgoogle.com/",
+        "start": "17/05/2021",
+        "end": "23/08/2021",
+        "organisation": "Multiple organisations like FOSSASIA,Redhat,ASF and many more ",
+        "location": "Online"
+    },
+    {
+        "title": "Google Summer of Docs",
+        "website": "https://developers.google.com/season-of-docs/docs",
+        "start": "16/04/2021",
+        "end": "16/11/2021",
+        "organisation": "Multiple organisations like Arduino,CERN-HSF,SciPy and many more ",
+        "location": "Online"
+    },
+    {
+        "title": "Season of KDE 2021",
+        "website": "https://season.kde.org/",
+        "start": "13/01/2021",
+        "end": "09/04/2021",
+        "organisation": "KDE Community",
+        "location": "Online"
+    },
+    {
+        "title": "Google Summer of Earth Engine",
+        "website": "https://sites.google.com/view/summerofearthengine",
+        "start": "01/05/2021",
+        "end": "31/07/2021",
+        "organisation": "Google Earth Engine",
+        "location": "Online"
+    },
+    {
+        "title": "MLH Fellowship",
+        "website": "https://fellowship.mlh.io/",
+        "start": "See the timeline",
+        "end": "See the timeline",
+        "organisation": "MLH Community",
+        "location": "Online"
+    },
+    {
+        "title": "Linux Kernel Mentorship Program ",
+        "website": "https://wiki.linuxfoundation.org/lkmp",
+        "start": "See the timeline",
+        "end": "See the timeline",
+        "organisation": "The Linux Foundation",
+        "location": "Online"
+    },
+    {
+        "title": "Alibaba Summer of Programming ",
+        "website": "https://developer.aliyun.com/summerofcode2019",
+        "start": "Last week of May",
+        "end": "Last week of August",
+        "organisation": "Alibaba Group",
+        "location": "Online"
+    },
+    {
+        "title": "Winter of Code ",
+        "website": "https://winterofcode.com/",
+        "start": "First week of December ",
+        "end": "First week of January ",
+        "organisation": "DSC NSEC, Deep Fusion AI, FireShort and many more",
+        "location": "Online"
+    },
+    {
+        "title": "DevScript Winter of Code",
+        "website": "https://developer.aliyun.com/summerofcode2019",
+        "start": "Last week of November",
+        "end": "Last week of February",
+        "organisation": "DevScript Community",
+        "location": "Online"
+    },
+    {
+        "title": "Script Winter of Code",
+        "website": "https://swoc.tech/",
+        "start": "05/01/2022",
+        "end": "28/02/2022",
+        "organisation": "The Script Foundation",
+        "location": "Online"
+    },
+    {
+        "title": "NJACK Winter of Code",
+        "website": "https://njackwinterofcode.github.io/",
+        "start": "01/12/2021",
+        "end": "06/01/2022",
+        "organisation": "IIT Patna",
+        "location": "Online"
+    },
+    {
+        "title": "NITK Winter of Code",
+        "website": "https://woc-nitk.github.io/#/",
+        "start": "01/12/2021",
+        "end": "02/01/2022",
+        "organisation": "NIT Surathkal",
+        "location": "Online"
+    }
 ]
