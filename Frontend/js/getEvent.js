@@ -4,6 +4,10 @@ fetch("./Frontend/data/events.json")
   .then((res) => {
     let cardContainer = document.getElementsByClassName("card-container")[0];
 
+    res.sort(function(a,b){
+      return new Date(b.start) - new Date(a.start);
+    })
+
     for (let data in res) {
       let emptyDiv = document.createElement("div");
       emptyDiv.className = "empty_div";
