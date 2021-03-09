@@ -70,5 +70,14 @@
     "end":"23/08/2021",
     "organisation":"Multiple organisations like FOSSASIA,Redhat,ASF and many more ",  
     "location":"Online"
+  },
+  {
+    "title":"SheHacks",
+    "website":"https://shehacks.tech/",
+    "start":"12/03/2021",
+    "end":"14/03/2021",
+    "organisation":"Multiple organisations like JUSPAY,circleci,elastic,DevFolio and many more ",  
+    "location":"Online"
   }
+
 ]
