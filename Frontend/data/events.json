@@ -69,5 +69,21 @@
         "end": "08/23/2021",
         "organisation": "Multiple organisations like FOSSASIA,Redhat,ASF and many more ",
         "location": "Online"
+    },
+    {
+        "title": "MLH Fellowship",
+        "website": "fellowship.mlh.io/",
+        "start": "05/31/2021",
+        "end": "08/23/2021",
+        "organisation": "Github, Facebook, Dev and many more ",
+        "location": "Online"
+    },
+    {
+        "title": "OUTREACHY",
+        "website": "www.outreachy.org/",
+        "start": "05/24/2021",
+        "end": "08/24/2021",
+        "organisation": "Collabora, Google, Mozilla, Red Hat and many more ",
+        "location": "Online"
     }
 ]
