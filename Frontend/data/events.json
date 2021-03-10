@@ -57,7 +57,7 @@
   },
     {
     "title": "GIRLSCRIPT SUMMER OF CODE",
-    "website": "https://gssoc.girlscript.tech/",
+    "website": "gssoc.girlscript.tech/",
     "start": "10/03/2021",
     "end": "31/05/2021",
     "organisation": "GirlScript Foundation",
@@ -65,19 +65,34 @@
   },
   {
     "title":"Google Summer of Code",
-    "website":"https://summerofcode.withgoogle.com/",
+    "website":"summerofcode.withgoogle.com/",
     "start":"17/05/2021",
     "end":"23/08/2021",
     "organisation":"Multiple organisations like FOSSASIA,Redhat,ASF and many more ",  
     "location":"Online"
   },
-  {
+   {
     "title":"SheHacks",
     "website":"https://shehacks.tech/",
     "start":"12/03/2021",
     "end":"14/03/2021",
     "organisation":"Multiple organisations like JUSPAY,circleci,elastic,DevFolio and many more ",  
     "location":"Online"
+  },
+  {
+    "title":"MLH Fellowship",
+    "website":"fellowship.mlh.io/",
+    "start":"31/05/2021",
+    "end":"23/08/2021",
+    "organisation":"Github, Facebook, Dev and many more ",  
+    "location":"Online"
+  },
+  {
+    "title":"OUTREACHY",
+    "website":"www.outreachy.org/",
+    "start":"24/05/2021",
+    "end":"24/08/2021",
+    "organisation":"Collabora, Google, Mozilla, Red Hat and many more ",  
+    "location":"Online"
   }
-
 ]
