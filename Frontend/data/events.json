@@ -57,10 +57,26 @@
   },
     {
     "title": "GIRLSCRIPT SUMMER OF CODE",
-    "website": "https://gssoc.girlscript.tech/",
+    "website": "gssoc.girlscript.tech",
     "start": "01/03/2021",
     "end": "31/05/2021",
     "organisation": "GirlScript Foundation",
     "location": "Online"
   },
+  {
+    "title": "RAILS GIRLS SUMMER OF CODE",
+    "website": "railsgirlssummerofcode.org",
+    "start": "01/07/2021",
+    "end": "30/09/2021",
+    "organisation": "Travis Foundation",
+    "location": "Online"
+  },
+  {
+    "title": "MOZILLA FESTIVAL",
+    "website": "www.mozillafestival.org/en",
+    "start": "08/03/2021",
+    "end": "14/03/2021",
+    "organisation": "Mozilla Foundation",
+    "location": "Online"
+  }
 ]
