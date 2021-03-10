@@ -1,16 +1,24 @@
 // Fetch data from events.json file
+var data;
 fetch("./Frontend/data/events.json")
   .then((res) => res.json())
   .then((res) => {
     let cardContainer = document.getElementsByClassName("card-container")[0];
+    //!Sorting Events on the basis of start year and month
+    res.sort(function (event1, event2) {
+      var m1 = new Date(event1.start).getMonth();
+      var m2 = new Date(event2.start).getMonth();
+      return (new Date(event2.end).getFullYear() - new Date(event1.end).getFullYear()) || (m2 - m1);
+    })
     for (let data in res) {
+
       let emptyDiv = document.createElement("div");
       emptyDiv.className = "empty_div";
       let eventCard = document.createElement("div");
       eventCard.className = "event_card";
       let eventTitle = document.createElement("div");
       let heading = document.createElement("h3");
-      heading.innerText = res[data].title;
+      heading.innerText = (res[data].title).toUpperCase(); //! Display event title in uppercase
       heading.className = "event_title";
       eventTitle.appendChild(heading);
       let startDate = document.createElement("span");
@@ -48,15 +56,15 @@ let search = document.querySelector('input');
 search.addEventListener('keyup', searchTerm);
 
 //function to search the event
-function searchTerm(e){
+function searchTerm(e) {
   let eventList = document.querySelectorAll('.empty_div');
   let input = e.target.value.toLowerCase();
-  Array.from(eventList).forEach( eventItem => {
+  Array.from(eventList).forEach(eventItem => {
     let toSearch = eventItem.childNodes[0].children[0].childNodes[0].innerText;
-    if( toSearch.toLowerCase().indexOf(input) != -1){
+    if (toSearch.toLowerCase().indexOf(input) != -1) {
       eventItem.style.display = 'block';
     }
-    else{
+    else {
       eventItem.style.display = 'none';
     }
   })
