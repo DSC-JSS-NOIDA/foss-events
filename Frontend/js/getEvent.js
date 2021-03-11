@@ -23,7 +23,7 @@ fetch("./Frontend/data/events.json")
       eventDetails.className = "event_details";
       let eventLink = document.createElement("a");
       Object.assign(eventLink, {
-        href: `https://${res[data].website}`,
+        href: `${res[data].website}`,
         target: "_blank",
         rel: "noopener noreferrer",
         className: "btn btn-primary link",
