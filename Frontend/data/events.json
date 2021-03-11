@@ -86,5 +86,22 @@
     "end":"24/08/2021",
     "organisation":"Collabora, Google, Mozilla, Red Hat and many more ",  
     "location":"Online"
+  },
+  {
+    "title":"MOZILLA FESTIVAL",
+    "website":"www.mozillafestival.org/en/",
+    "start":"8/03/2021",
+    "end":"14/03/2021",
+    "organisation":"Mozilla Foundation",  
+    "location":"Online"
+
+  },
+  {
+    "title":"LINUX APP SUMMIT",
+    "website":"linuxappsummit.org/",
+    "start":"13/05/2021",
+    "end":"15/05/2021",
+    "organisation":"KDE and GNOME",  
+    "location":"Online"
   }
 ]
