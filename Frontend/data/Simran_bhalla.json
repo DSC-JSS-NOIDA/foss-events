@@ -1,0 +1,98 @@
+[
+  {
+    "title": "ACCELERATING DEVELOPMENT AND DEPLOYMENT OF OPEN SOURCE",
+    "website": "www.opensourceindia.in",
+    "start": "08/10/20",
+    "end": "09/10/20",
+    "organisation": "Open Source India",
+    "location": "Online"
+  },
+  {
+    "title": "Sunday JS: Getting to know JavaScript",
+    "website": "www.meetup.com",
+    "start": "11/10/20 10:00 AM",
+    "end": "11/10/20 10:40 AM GMT+11",
+    "organisation": "Sydney Volunteer Programmers",
+    "location": "Online"
+  },
+  {
+    "title": "FOSDEM 2021",
+    "website": "www.fosdem.org/2021/",
+    "start": "06/02/21",
+    "end": "07/02/21",
+    "organisation": "FOSDEM dev community at University Brussels (ULB)",
+    "location": "Online"
+  },
+  {
+    "title": "Codeheat",
+    "website": "codeheat.org",
+    "start": "01/10/20",
+    "end": "01/06/21",
+    "organisation": "FOSSASIA",
+    "location": "Online"
+  },
+  {
+    "title": "FOSSCOMM",
+    "website": "2020.fosscomm.gr",
+    "start": "20/11/20",
+    "end": "22/11/20",
+    "organisation": "University of Western Macedonia",
+    "location": "Online"
+  },
+  {
+    "title": "DevFest India",
+    "website": "devfestindia.com/",
+    "start": "16/10/20",
+    "end": "18/10/20",
+    "organisation": "Google",
+    "location": "Online"
+  },
+    {
+    "title": "All Things Open",
+    "website": "2020.allthingsopen.org",
+    "start": "19/10/20",
+    "end": "20/10/20",
+    "organisation": "All Things Open",
+    "location": "Online"
+  },
+    {
+    "title": "GIRLSCRIPT SUMMER OF CODE",
+    "website": "gssoc.girlscript.tech/",
+    "start": "10/03/2021",
+    "end": "31/05/2021",
+    "organisation": "GirlScript Foundation",
+    "location": "Online"
+  },
+  {
+    "title":"Google Summer of Code",
+    "website":"summerofcode.withgoogle.com/",
+    "start":"17/05/2021",
+    "end":"23/08/2021",
+    "organisation":"Multiple organisations like FOSSASIA,Redhat,ASF and many more ",  
+    "location":"Online"
+  },
+  {
+    "title":"MLH Fellowship",
+    "website":"fellowship.mlh.io/",
+    "start":"31/05/2021",
+    "end":"23/08/2021",
+    "organisation":"Github, Facebook, Dev and many more ",  
+    "location":"Online"
+  },
+  {
+    "title":"OUTREACHY",
+    "website":"www.outreachy.org/",
+    "start":"24/05/2021",
+    "end":"24/08/2021",
+    "organisation":"Collabora, Google, Mozilla, Red Hat and many more ",  
+    "location":"Online"
+  },
+   {
+    "title":"Hacktoberfest",
+    "website":"hacktoberfest.digitalocean.com/",
+    "start":"01/10/2021",
+    "end":"31/10/2021",
+    "organisation":"Digital Ocean , Intel, Github, Vonage  and many more ",  
+    "location":"Online"
+  }
+]
