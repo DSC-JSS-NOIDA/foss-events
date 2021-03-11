@@ -115,17 +115,17 @@ footer {
 html,
 body {
   width: 100%;
-  height:100%; 
+  height:100%;
   overflow-x: hidden;
 }
 
 .card-container {
      width: 100%;
      display: flex;
-     margin-left: 40px;    
+     margin-left: 40px;
      flex-wrap: wrap;
      margin-bottom:150px;
-     
+
 }
 .empty_div {
     position: relative;
@@ -181,7 +181,7 @@ body {
   .link{
       margin-top: 20px;
   }
-  
+
   .location{
       color: #5cb85c;
       font-weight: bold;
@@ -208,4 +208,67 @@ body {
     footer{
       font-size:0.9rem;
     }
+  }
+
+  /* Social Links */
+  #social{
+    position: fixed;
+    top: 25%;
+    left: 0;
+  }
+  #social .social-btn {
+    display: block;
+    padding: 14px 13px;
+  }
+
+  #social .social-img {
+    width: 19px;
+  }
+
+  #facebook{
+    background-color: #3b5998
+  }
+
+  #facebook:hover{
+    background-color: #2d4373;
+  }
+
+  #linkedin {
+    background-color: #0077b5;
+  }
+
+  #linkedin:hover {
+    background-color: #00121c;
+  }
+
+  #twitter {
+    background-color: #83c3f3;
+  }
+
+  #twitter:hover {
+    background-color: #55acee;
+  }
+
+  #gmail {
+    background-color: #dd4b39;
+  }
+
+  #gmail:hover {
+    background-color: #c23321;
+  }
+
+  #whatsapp {
+    background-color: #6ba92f;
+  }
+
+  #whatsapp:hover {
+    background-color: #528124;
+  }
+
+  #mail {
+    background-color: #ed4926;
+  }
+
+  #mail:hover {
+    background-color: #cf3311;
   }
