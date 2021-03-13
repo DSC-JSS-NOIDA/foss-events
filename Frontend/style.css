@@ -209,3 +209,14 @@ body {
       font-size:0.9rem;
     }
   }
+  /*navbar styling */
+
+  .navbar{
+      position:fixed;
+      width:100%;
+      overflow:hidden;
+      z-index: 100;
+  }
+  .container-fluid{
+      margin-top:100px;
+  }
