@@ -86,7 +86,7 @@
     "end":"24/08/2021",
     "organisation":"Collabora, Google, Mozilla, Red Hat and many more ",  
     "location":"Online"
-  }
+  },
   {
     "title":"BOSS - Bountiful Open Source Summer (2021)",
     "website":"https://boss.codingblocks.com/",
@@ -94,13 +94,23 @@
     "end":"15/08/2021",
     "organisation":"Coding Blocks Labs",  
     "location":"Online"
-  }
+  },
+  
   {
     "title":"24 Pull Requests (2021)",
     "website":"https://24pullrequests.com/",
     "start":"1/12/2021",
     "end":"24/12/2021",
     "organisation":"24 Pull Requests",  
+    "location":"Online"
+  },
+
+  {
+    "title":"Season of KDE 2021",
+    "website":"https://season.kde.org/",
+    "start":"04/12/2020",
+    "end":"09/04/2021",
+    "organisation":"KDE Community",  
     "location":"Online"
   }
 ]
