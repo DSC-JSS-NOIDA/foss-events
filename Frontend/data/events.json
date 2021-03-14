@@ -105,6 +105,7 @@
     "location":"Online"
   },
 
+ 
   {
     "title":"Season of KDE 2021",
     "website":"https://season.kde.org/",
@@ -112,5 +113,15 @@
     "end":"09/04/2021",
     "organisation":"KDE Community",  
     "location":"Online"
+  },
+
+  {
+    "title":"Google Season of Docs 2021 (GSoD)",
+    "website":"https://developers.google.com/season-of-docs/",
+    "start":"02/09/2021",
+    "end":"12/14/2021",
+    "organisation":"Various Organisations",  
+    "location":"Online"
   }
+
 ]
