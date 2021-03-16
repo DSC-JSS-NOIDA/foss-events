@@ -160,6 +160,7 @@ body {
   .event_card .btn{
       background-color: #5cb85c;
       border:1px solid #5cb85c;
+      isolation: isolate;
   }
   .date{
       color: grey;
@@ -202,7 +203,7 @@ body {
     
   }
   
-  .button {
+  .btn {
     isolation: isolate;
   }
   

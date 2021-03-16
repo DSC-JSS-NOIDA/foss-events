@@ -65,13 +65,13 @@ function searchTerm(e){
 const options = {
   bottom: '100px', // default: '32px'
   right: 'unset', // default: '32px'
-  left: '30px', // default: 'unset'
-  time: '0.3s', // default: '0.3s'
+  left: '32px', // default: 'unset'
+  time: '0.7s', // default: '0.3s'
   mixColor: '#fff', // default: '#fff'
   backgroundColor: '#fff',  // default: '#fff'
   buttonColorDark: '#100f2c',  // default: '#100f2c'
   buttonColorLight: '#fff', // default: '#fff'
-  saveInCookies: false, // default: true,
+  saveInCookies: true, // default: true,
   label: '🌓', // default: ''
   autoMatchOsTheme: true // default: true
 }
