@@ -135,7 +135,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 2px solid rgba(0, 0, 0, 0.125);
+    border: 2px solid rgb(146, 145, 145);
     border-radius: 5px;
     padding: 30px;
     align-items: center;
@@ -196,6 +196,18 @@ body {
     padding-top: 10px;
     padding-bottom:5px;
     align-items: center;
+  }
+  .darkmode--activated div, .darkmode--activated li, .darkmode--activated {
+    color:aliceblue;
+    
+  }
+  
+  .button {
+    isolation: isolate;
+  }
+  
+  .darkmode--activated .logo {
+    mix-blend-mode: difference;
   }
   @media screen and (max-width:768px){
     .card-container{
