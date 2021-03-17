@@ -119,6 +119,22 @@
     "end": "14/03/2021",
     "organisation": "Mozilla Foundation",
     "location": "Online"
+  },
+  {
+    "title":"LINUX APP SUMMIT",
+    "website":"linuxappsummit.org/",
+    "start":"13/05/2021",
+    "end":"15/05/2021",
+    "organisation":"KDE and GNOME",  
+    "location":"Online"
+  },
+  {
+    "title":"HACKEN OPEN AIR",
+    "website":"www.hackenopenair.de/",
+    "start":"9/09/2021",
+    "end":"12/09/2021",
+    "organisation":"STRATUM 0",  
+    "location":"Online"
   }
 ]
 
