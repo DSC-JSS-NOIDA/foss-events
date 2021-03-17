@@ -119,6 +119,14 @@
     "end": "14/03/2021",
     "organisation": "Mozilla Foundation",
     "location": "Online"
+  },
+  {
+    "title": "Hacktoberfest",
+    "website": "https://hacktoberfest.digitalocean.com/",
+    "start": "01/10/2021",
+    "end": "31/10/2021",
+    "organisation": "Digital Ocean",
+    "location": "Online"
   }
 ]
 
