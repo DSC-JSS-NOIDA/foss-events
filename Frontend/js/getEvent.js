@@ -61,7 +61,6 @@ function searchTerm(e){
     }
   })
 }
-
 const options = {
   bottom: '100px', // default: '32px'
   right: 'unset', // default: '32px'

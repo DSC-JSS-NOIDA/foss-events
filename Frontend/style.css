@@ -198,18 +198,6 @@ body {
     padding-bottom:5px;
     align-items: center;
   }
-  .darkmode--activated div, .darkmode--activated li, .darkmode--activated {
-    color:aliceblue;
-    
-  }
-  
-  .btn {
-    isolation: isolate;
-  }
-  
-  .darkmode--activated .logo {
-    mix-blend-mode: difference;
-  }
   @media screen and (max-width:768px){
     .card-container{
         align-items: center;
@@ -221,4 +209,16 @@ body {
     footer{
       font-size:0.9rem;
     }
+  }
+  .darkmode--activated div, .darkmode--activated li, .darkmode--activated {
+    color:aliceblue;
+    
+  }
+  
+  .btn {
+    isolation: isolate;
+  }
+  
+  .darkmode--activated .logo {
+    mix-blend-mode: difference;
   }
