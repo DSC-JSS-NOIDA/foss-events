@@ -119,6 +119,30 @@
     "end": "14/03/2021",
     "organisation": "Mozilla Foundation",
     "location": "Online"
-  }
+  },
+  {
+    "title": "Digital Ocean Hacktoberfest",
+    "website": "hacktoberfest.digitalocean.com/",
+    "start": "01/10/2021",
+    "end": "31/10/2021",
+    "organisation": "DigitalOcean, intel, Github, Dev and many more ",
+    "location": "Online"
+  },
+  {
+    "title": "Google Season of Docs (GSoD)",
+    "website": "developers.google.com/season-of-docs",
+    "start": "11/05/2021",
+    "end": "06/12/2021",
+    "organisation": "Apache Airflow, About Code, Arduino, etc",
+    "location": "Online"
+  },
+  {
+    "title": "Season of KDE",
+    "website": "season.kde.org/",
+    "start": "04/12/2020",
+    "end": "12/04/2021",
+    "organisation": "KDE Community",
+    "location": "Online"
+  },
 ]
 
