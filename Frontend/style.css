@@ -26,10 +26,9 @@ body {
 
 /*Particle js background animation*/
 .home-area{
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    z-index: -1;
+    height: 98%;
+    width: 98%;
+    position: absolute;
 }
 
 .custom-control-input{
@@ -192,11 +191,6 @@ footer {
     padding-top: 10px;
     padding-bottom: 5px;
     align-items: center;
-}
-.navbar{
-    position: fixed;
-    width: 100%;
-    z-index: 1;
 }
 
 @media screen and (max-width:768px) {
