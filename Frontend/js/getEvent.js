@@ -111,3 +111,23 @@ if (currentTheme) {
     darkMode();
   }
 }
+
+window.addEventListener("DOMContentLoaded", function () {
+  // get the form elements defined in your form HTML above
+
+  var form = document.getElementById("my-form");
+  var name = document.getElementById("validationCustom01");
+  var email = document.getElementById("validationCustom02");
+  var message = document.getElementById("validationCustom03");
+  // var button = document.getElementById("my-form-button");
+  var status = document.getElementById("status");
+  // Success and Error functions for after the form is submitted
+
+  function success() {
+    form.value='';
+    name.value='';
+    email.value='';
+    message.value='';
+    status.classList.add("success");
+    status.innerHTML = "Thanks!";
+  }
