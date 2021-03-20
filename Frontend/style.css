@@ -73,13 +73,16 @@ body {
 .form-control{
     border:1.5px solid var(--primary-input-border);
     background-color: var(--primary-input-background); 
-    margin-top: 100px;
 }
 
 .form-control:focus{
     border:1.5px solid var(--primary-input-border);
     background-color: var(--primary-input-background);
     outline:none;
+}
+
+.search-input{
+    margin-top: 100px;
 }
 
 .card-container {
