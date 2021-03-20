@@ -21,7 +21,14 @@ body {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
-    background-color: var(--primary-background);
+}
+
+/*Particle js background animation*/
+.home-area{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
 }
 
 .custom-control-input{
@@ -66,6 +73,7 @@ body {
 .form-control{
     border:1.5px solid var(--primary-input-border);
     background-color: var(--primary-input-background); 
+    margin-top: 100px;
 }
 
 .form-control:focus{
@@ -80,7 +88,10 @@ body {
     padding-top: 20px;
     flex-wrap: wrap;
     margin-bottom: 150px;
+
 }
+
+
 
 .empty_div {
     position: relative;
@@ -103,6 +114,12 @@ body {
     transition: all 0.5s ease;
     border-bottom-color: #5cb85c;
     border-bottom-width: 4px;
+    box-shadow: 0 8px 16px 0  #5cb85c;
+}
+
+.event_card:hover {
+    box-shadow: 0 2px 8px 0  #5cb85c;  
+    
 }
 
 .event_card::before {
@@ -155,8 +172,12 @@ body {
     margin-top: 20px;
 }
 
-.location {
+.locationOnline {
     color: #5cb85c;
+    font-weight: bold;
+}
+.locationOffline {
+    color: #FF0000;
     font-weight: bold;
 }
 
@@ -170,6 +191,11 @@ footer {
     padding-top: 10px;
     padding-bottom: 5px;
     align-items: center;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 @media screen and (max-width:768px) {
@@ -185,3 +211,4 @@ footer {
         font-size: 0.9rem;
     }
 }
+
