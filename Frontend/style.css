@@ -30,7 +30,7 @@ body {
 .home-area{
     height: 98%;
     width: 98%;
-    position: absolute;
+    position:absolute;
 }
 
 .custom-control-input{
@@ -77,14 +77,14 @@ body {
     background-color: var(--primary-input-background); 
 }
 
+.search-input{
+    margin-top: 100px;
+}
+
 .form-control:focus{
     border:1.5px solid var(--primary-input-border);
     background-color: var(--primary-input-background);
     outline:none;
-}
-
-.search-input{
-    margin-top: 100px;
 }
 
 .card-container {
@@ -345,4 +345,3 @@ footer {
         font-size: 0.9rem;
     }
 }
-
