@@ -6,6 +6,7 @@
     --primary-organisation:black;
     --primary-input-border:#e1e4e8;
     --primary-input-background:#fff;
+    --primary-contact-background:#dee3de;
 }
 [data-theme="dark"]{
     --primary-background:#010409;
@@ -15,6 +16,7 @@
     --primary-organisation:rgba(245,245,245,0.88);
     --primary-input-border:#21262d;
     --primary-input-background:#0d1117;
+    --primary-contact-background:#1a2228;
 }
 html,
 body {
@@ -195,6 +197,31 @@ footer {
     padding-bottom: 5px;
     align-items: center;
 }
+
+#contactus{
+    background-color: var(--primary-contact-background);
+    padding:25px 50px;
+    padding-bottom: 55px;
+  }
+
+  #contact-head{
+    text-align: center;
+    text-transform: uppercase;
+    color:var(--primary-title);
+    font-weight: 650;
+    font-size: 35px;
+    border-bottom:1.5px solid var(--primary-title);
+    padding-bottom: 4px;
+  }
+
+  #contact-message{
+    color:var(--primary-title);
+    margin-top: 15px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    margin:0px 80px;
+  }
 
 @media screen and (max-width:768px) {
     .card-container {
