@@ -247,6 +247,45 @@ footer {
     margin:30px 10px;
   }
 
+  .contact-inputs{
+    margin-left: 5px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    color:var(--primary-title);
+  }
+
+  .btn-md{
+    font-weight: 600;
+    background-color: #5cb85c;
+    color:var(--primary-background);
+    width:100%;
+  }
+
+  #social-section{
+    padding:70px 0px;
+  }
+
+  .footer-details{
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  .footer-details i{
+    color:#5cb85c;
+  }
+
+  .footer-details span{
+    color:grey;
+  }
+
+  #social-media-icons{
+    margin-top:20px;
+    padding:0px 50px;
+    display:flex;
+    justify-content: space-between;
+    font-size: 28px;
+  }
+
 @media screen and (max-width:768px) {
     .card-container {
         align-items: center;
