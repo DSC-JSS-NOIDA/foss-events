@@ -143,4 +143,28 @@
     "organisation": "KDE Community",
     "location": "Online"
   },
+  {
+    "title": "Open Mainframe Project Mentorship Program",
+    "website": "www.openmainframeproject.org/projects/mentorship-program",
+    "start": "01/03/2021",
+    "end": "01/07/2021",
+    "organisation": "IBM, Red Hat, Rocket, Broadcom and many more",
+    "location": "Online"
+  },
+  {
+    "title": "Linux Kernel Mentorship Program",
+    "website": "wiki.linuxfoundation.org/lkmp",
+    "start": "09/03/2021",
+    "end": "21/08/2021",
+    "organisation": "Red Hat, Linux Foundation",
+    "location": "Online"
+  },
+  {
+    "title": "Redox OS Summer of Code",
+    "website": "www.redox-os.org/rsoc/",
+    "start": "01/03/2021",
+    "end": "01/07/2021",
+    "organisation": "Redox Foundation, Github",
+    "location": "Online"
+  },
 ]
