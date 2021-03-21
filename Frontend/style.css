@@ -79,6 +79,7 @@ body {
 
 .search-input{
     margin-top: 100px;
+    position:relative;
 }
 
 .form-control:focus{
