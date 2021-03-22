@@ -19,7 +19,7 @@
   </head>
   <body>
     <!-- Navbar Starts -->
-    <nav class="navbar navbar-light bg-dark">
+    <nav class="navbar navbar-light bg-dark fixed-top">
       <a class="navbar-brand text-white" href="#">FossEvents</a>
       <div class="navbar-nav ml-auto toogle-slider">
         <div class="custom-control custom-switch">
@@ -48,7 +48,7 @@
     <div class="container-fluid mt-5">
       <!-- Search Bar -->
       <input
-        class="container form-control"
+        class="container form-control search-input"
         placeholder="Search for event here ..."
       />
       <!-- Card Container -->
@@ -58,6 +58,56 @@
     <!-- Main Content Ends -->
 
     <!-- Footer starts -->
+    <section id="contactus">
+      <p id="contact-head">Contact us</p>
+      <p id="contact-message">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within a matter of hours to help you.</p>
+      <div class="container">
+        <div id="form-footer" class="row">
+          <div class="col-md-8">
+            <div class="center-div">
+              <div class="contact-table">
+                <form action="https://formspree.io/f/xdoynnyq" method="POST" id="my-form">
+                  <div class="input-container">
+                    <label class="contact-inputs" for="validationCustom01">Your Name :</label>
+                    <input type="text" class="form-control contact-inputs-tags" id="validationCustom01" placeholder="Enter your name" name="name">
+                  </div>
+                  <div class="input-container">
+                    <label class="contact-inputs" for="validationCustom02">Your Email :</label>
+                    <input type="email" class="form-control contact-input-tags" id="validationCustom02" placeholder="Enter your email address" name="email">
+                  </div>
+                  <div class="input-container">
+                    <label class="contact-inputs" for="validationCustom03">Message :</label>
+                    <textarea type="text" class="form-control contact-input-tags" id="validationCustom03" placeholder="Enter your message here . . ." rows="4" name="message"></textarea>
+                  </div>
+                  <div>
+                    <button class="btn btn-md" type="submit">SUBMIT</button>
+                  </div>
+                </form>
+                <div id="status"></div>
+              </div>
+            </div>
+          </div>
+          <div id="social-section" class="col-md-4">
+            <div style="padding:0px 20px;padding-bottom: 15px;border-bottom:3.5px solid grey">
+              <p class="footer-details"><i class="fa fa-map-marker mr-5" aria-hidden="true"></i><span>DSC JSS Noida</span></p>
+              <p class="footer-details"><i class="fa fa-envelope mr-5" aria-hidden="true"></i><span>dscjssnoida@gmail.com</span></p>
+              <p class="footer-details"><i class="fa fa-phone mr-5" aria-hidden="true"></i><span>+91 9876543310</span></p>
+            </div>
+            <div id="social-media-icons">
+              <i class="fa fa-facebook-square social-media" aria-hidden="true"></i>
+              <i class="fa fa-linkedin-square social-media" aria-hidden="true"></i>
+              <i class="fa fa-google-plus-square social-media" aria-hidden="true"></i>
+              <i class="fa fa-twitter social-media" aria-hidden="true"></i>
+              <i class="fa fa-github social-media" aria-hidden="true"></i>
+              <i class="fa fa-instagram social-media" aria-hidden="true"></i>
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+    </section>
     <footer>
       <div class="footer">
         Made with &#10084; By <a href="https://dscjss.in">DSC JSSATEN</a>
