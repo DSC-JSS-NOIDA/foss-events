@@ -1,1 +1,264 @@
+:root {
+  --primary-background: #fff;
+  --primary-border-card: rgba(0, 0, 0, 0.125);
+  --primary-date: grey;
+  --primary-title: black;
+  --primary-organisation: black;
+  --primary-input-border: #e1e4e8;
+  --primary-input-background: #fff;
+}
+[data-theme="dark"] {
+  --primary-background: #010409;
+  --primary-border-card: rgba(255, 255, 255, 0.125);
+  --primary-date: #696969;
+  --primary-title: #f0f6fc;
+  --primary-organisation: rgba(245, 245, 245, 0.88);
+  --primary-input-border: #21262d;
+  --primary-input-background: #0d1117;
+}
 
+/* custom scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  width: 10px;
+  border-radius: 5px;
+  background: #5cb85c;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5ce95c;
+  transition: all 0.1s ease-in-out;
+  filter: blur(20px);
+}
+
+::-webkit-scrollbar-track {
+  width: 0px;
+  margin-right: 15px;
+  background: transparent;
+}
+
+/* Main Style css */
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*Particle js background animation*/
+.home-area {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+.custom-control-input {
+  margin-right: 10px;
+}
+
+.custom-switch .custom-control-label::before {
+  width: 35px !important;
+}
+
+.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+  background-color: #fff;
+  transform: translateX(1.17rem) !important;
+}
+
+.custom-control-input:focus ~ .custom-control-label::before {
+  border-color: #343a40 !important;
+  box-shadow: 0 0 0 0rem rgba(0, 0, 0, 0) !important;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  border-color: #343a40 !important;
+  background-color: #010409 !important;
+}
+
+.custom-control-input:active ~ .custom-control-label::before {
+  background-color: #010409 !important;
+  border-color: #343a40 !important;
+}
+
+.custom-control-label {
+  user-select: none;
+  color: white;
+  font-size: 14.8px;
+  padding-left: 4.5px;
+}
+
+.toogle-slider {
+  margin-right: 30px;
+}
+
+.form-control {
+  border: 1.5px solid var(--primary-input-border);
+  background-color: var(--primary-input-background);
+  margin-top: 100px;
+}
+
+.form-control:focus {
+  border: 1.5px solid var(--primary-input-border);
+  background-color: var(--primary-input-background);
+  outline: none;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 150px;
+}
+
+.empty_div {
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+.event_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid var(--primary-border-card);
+  border-radius: 5px;
+  padding: 30px;
+  align-items: center;
+  margin: 30px;
+  width: 300px;
+  min-height: 30rem;
+  word-wrap: break-all;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  border-bottom-color: #5cb85c;
+  border-bottom-width: 4px;
+  box-shadow: 0 8px 16px 0 #5cb85c;
+}
+
+.event_card:hover {
+  box-shadow: 0 2px 8px 0 #5cb85c;
+}
+
+.event_card::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: #5cb85c;
+  border-radius: 100%;
+  position: absolute;
+  top: 25px;
+  left: 47%;
+}
+
+.event_card .btn {
+  background-color: #5cb85c;
+  border: 1px solid #5cb85c;
+}
+
+.date {
+  color: var(--primary-date);
+  margin-top: 20px;
+}
+
+.date:nth-child(2) {
+  margin-bottom: 20px;
+}
+
+.event_details {
+  display: flex;
+  flex-direction: column;
+}
+
+.empty_div:hover {
+  transform: scale(0.95);
+  transition: all 0.5s ease;
+}
+
+.event_organisation {
+  color: var(--primary-organisation);
+}
+.event_title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  min-height: 5rem;
+  text-transform: uppercase;
+  color: var(--primary-title);
+}
+
+.link {
+  margin-top: 20px;
+}
+
+.locationOnline {
+  color: #5cb85c;
+  font-weight: bold;
+}
+.locationOffline {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+footer {
+  border-top: 2px solid var(--primary-border-card);
+  width: 100%;
+  text-align: center;
+  flex: none;
+  position: sticky;
+  top: 100%;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  align-items: center;
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Scroll to top css */
+.to-top {
+  background: #5cb85c;
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
+  color: #fff;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s;
+  animation: ease-in-out 0.5s both;
+}
+.to-top.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+.to-top.active:hover {
+  background: #228b22;
+}
+
+@media screen and (max-width: 768px) {
+  .card-container {
+    align-items: center;
+    justify-content: center;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  footer {
+    font-size: 0.9rem;
+  }
+}
