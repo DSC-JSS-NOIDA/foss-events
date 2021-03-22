@@ -60,6 +60,7 @@ $ cd foss-events/Frontend
 - Run `git pull` command to sync with remote repo.<br>
 - Move to `data` folder and open `events.json` file.<br>
 - Now to add an event to website, add an object with keys same as listed in existing objects in the file.<br>
+- Note that the starting and ending dates of an event in the `events.json` file must be in dd/mm/yyyy format.<br>
 - Run `npm start` for starting server.
 - Save and commit your code.<br>
 - Push to your fork of the repository , navigate to original repository and make a pull request.<br>
