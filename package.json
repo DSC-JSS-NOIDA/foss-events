@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/DSC-JSS-NOIDA/foss-events#readme",
   "dependencies": {
-    "live-server": "^1.2.1"
+    "live-server": "^1.2.1",
+    "string-similarity": "^4.0.4"
   }
 }
