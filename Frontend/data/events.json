@@ -8,6 +8,30 @@
     "location": "Online"
   },
   {
+    "title": "MLH March Challenges",
+    "website": "https://mlh-march-challenges.devpost.com/",
+    "start": "01/03/21",
+    "end": "31/03/21",
+    "organisation": "Major League Hacking (MLH)",
+    "location": "Online"
+  },
+  {
+    "title": "Hack You Hackathon",
+    "website": "https://www.mergeintern.com/hackyou",
+    "start": "10/04/21",
+    "end": "11/04/21",
+    "organisation": "Merge Intern",
+    "location": "Online"
+  },
+  {
+    "title": "She Hacks DTU",
+    "website": "https://shehacks.climb.community/",
+    "start": "9/04/21",
+    "end": "11/04/21",
+    "organisation": "Delhi's Largest All-Women Hackathon",
+    "location": "Online"
+  },
+  {
     "title": "ACCELERATING DEVELOPMENT AND DEPLOYMENT OF OPEN SOURCE",
     "website": "www.opensourceindia.in",
     "start": "08/10/20",
