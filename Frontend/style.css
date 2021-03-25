@@ -66,6 +66,10 @@ html {
   position:absolute;
 }
 
+.filter-labels{
+  color:var(--primary-title);
+}
+
 .custom-control-input {
   margin-right: 10px;
 }
