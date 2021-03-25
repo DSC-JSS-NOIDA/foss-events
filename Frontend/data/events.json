@@ -135,6 +135,22 @@
     "end": "30/11/2021",
     "organisation": "Multiple organisations like Apache Airflow,Arduino,CERN-HSF",
     "location": "Online"
+  },
+  {
+    "title": "Alibaba Summer of Code",
+    "website": "www.alibabacloud.com/campaign/summerofcode2020?spm=a2c65.11461447.0.0.15b575814Tc7U1",
+    "start": "25/05/2021",
+    "end": "05/09/2021",
+    "organisation": "SQL Flow, Sentinel, DragonFly and many more ",
+    "location": "Online"
+  },
+  {
+    "title": "ERPNext Summer of Code",
+    "website": "erpnext.org/esoc",
+    "start": "03/04/2021",
+    "end": "22/08/2021",
+    "organisation": "Zerodha, CloudE8, Elastic Run and many more ",
+    "location": "Online"
   }
 ]
 
