@@ -6,6 +6,7 @@
   --primary-organisation: black;
   --primary-input-border: #e1e4e8;
   --primary-input-background: #fff;
+  --primary-contact-background:#dee3de;
 }
 [data-theme="dark"] {
   --primary-background: #010409;
@@ -15,6 +16,7 @@
   --primary-organisation: rgba(245, 245, 245, 0.88);
   --primary-input-border: #21262d;
   --primary-input-background: #0d1117;
+  --primary-contact-background:#1a2228;
 }
 
 /* custom scroll bar */
