@@ -17,6 +17,11 @@
   --primary-input-background: #0d1117;
 }
 
+/* Github hover */
+.fa-github:hover{
+  color: rgba(255, 255, 255, 0.74);
+}
+
 /* custom scroll bar */
 ::-webkit-scrollbar {
   width: 10px;
