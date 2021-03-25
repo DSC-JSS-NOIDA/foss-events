@@ -296,6 +296,77 @@ footer {
   width:100%;
 }
 
+#social-section{
+  padding:70px 0px;
+}
+
+.footer-details{
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.footer-details i{
+  color:#5cb85c;
+}
+
+.footer-details span{
+  color:grey;
+}
+
+#social-media-icons{
+  margin-top:20px;
+  padding:0px 50px;
+  display:flex;
+  justify-content: space-between;
+  font-size: 28px;
+}
+
+.social-media{
+  color:var(--primary-title);
+  transition: color 0.15s ease-in;
+}
+
+.social-media:hover{
+  color:#5cb85c;
+}
+
+#status {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+  margin-top: 15px;
+  display:none;
+}
+
+#status.success {
+  background-color: rgb(211, 250, 153);
+  animation: status 4s ease forwards;
+}
+
+#status.error {
+  background-color: rgb(250, 129, 92);
+  color: white;
+  animation: status 4s ease forwards;
+}
+
+@keyframes status {
+  0% {
+  opacity: 1;
+  pointer-events: all;
+  }
+  90% {
+  opacity: 1;
+  pointer-events: all;
+  }
+  100% {
+  opacity: 0;
+  pointer-events: none;
+  }
+}
+
 .navbar {
   position: fixed;
   width: 100%;
