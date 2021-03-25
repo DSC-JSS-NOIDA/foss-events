@@ -45,6 +45,8 @@ html,
 body {
   width: 100%;
   overflow-x: hidden;
+  z-index:-10;
+  background-color: var(--primary-background);
 }
 
 html {
@@ -57,6 +59,11 @@ html {
   width: 100%;
   position: fixed;
   z-index: -1;
+}
+
+#contents-page{
+  z-index:10;
+  position:absolute;
 }
 
 .custom-control-input {
@@ -101,6 +108,9 @@ html {
 .form-control {
   border: 1.5px solid var(--primary-input-border);
   background-color: var(--primary-input-background);
+}
+
+.search-input{
   margin-top: 100px;
 }
 
@@ -222,6 +232,36 @@ footer {
   padding-bottom: 5px;
   align-items: center;
 }
+
+#contactus{
+  background-color: var(--primary-contact-background);
+  padding:25px 50px;
+  padding-bottom: 55px;
+}
+
+#contact-head{
+  text-align: center;
+  text-transform: uppercase;
+  color:var(--primary-title);
+  font-weight: 650;
+  font-size: 35px;
+  border-bottom:1.5px solid var(--primary-title);
+  padding-bottom: 4px;
+}
+
+#contact-message{
+  color:var(--primary-title);
+  margin-top: 15px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  margin:0px 80px;
+}
+
+#form-footer{
+  margin-top: 30px;
+}
+
 .navbar {
   position: fixed;
   width: 100%;
