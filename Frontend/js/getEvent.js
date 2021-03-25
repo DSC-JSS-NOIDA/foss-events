@@ -174,6 +174,23 @@ window.addEventListener("DOMContentLoaded", function () {
 
 // helper function for sending an AJAX request
 
+function ajax(method, url, data, success, error) {
+  var xhr = new XMLHttpRequest();
+  xhr.open(method, url);
+  xhr.setRequestHeader("Accept", "application/json");
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState !== XMLHttpRequest.DONE) return;
+    if (xhr.status === 200) {
+      success(xhr.response, xhr.responseType);
+    } else {
+      error(xhr.status, xhr.response, xhr.responseType);
+    }
+  };
+  xhr.send(data);
+
+
+}
+
 const toggleSwitch=document.querySelector('.custom-control-input');
 const text=document.querySelector('.custom-control-label');
 function darkMode(){
