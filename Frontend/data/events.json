@@ -5,7 +5,8 @@
     "start": "08/10/20",
     "end": "09/10/20",
     "organisation": "Open Source India",
-    "location": "Online"
+    "location": "Online" ,
+    "score":"1"
   },
   {
     "title": "Sunday JS: Getting to know JavaScript",
@@ -13,7 +14,8 @@
     "start": "11/10/20 10:00 AM",
     "end": "11/10/20 10:40 AM GMT+11",
     "organisation": "Sydney Volunteer Programmers",
-    "location": "Online"
+    "location": "Online",
+    "score":"1"
   },
   {
     "title": "FOSDEM 2021",
@@ -21,31 +23,35 @@
     "start": "06/02/21",
     "end": "07/02/21",
     "organisation": "FOSDEM dev community at University Brussels (ULB)",
-    "location": "Online"
-  },
+    "location": "Online",
+    "score":"1"
+ },
   {
     "title": "Codeheat",
     "website": "codeheat.org",
     "start": "01/10/20",
     "end": "01/06/21",
     "organisation": "FOSSASIA",
-    "location": "Online"
-  },
+    "location": "Online",
+    "score":"1"
+ },
   {
     "title": "FOSSCOMM",
     "website": "2020.fosscomm.gr",
     "start": "20/11/20",
     "end": "22/11/20",
     "organisation": "University of Western Macedonia",
-    "location": "Online"
-  },
+    "location": "Online",
+    "score":"1"
+ },
   {
     "title": "DevFest India",
     "website": "devfestindia.com/",
     "start": "16/10/20",
     "end": "18/10/20",
     "organisation": "Google",
-    "location": "Online"
+    "location": "Online" ,
+    "score":"1" 
   },
   {
     "title": "All Things Open",
@@ -53,7 +59,8 @@
     "start": "19/10/20",
     "end": "20/10/20",
     "organisation": "All Things Open",
-    "location": "Online"
+    "location": "Online",
+    "score":"1" 
   },
   {
     "title": "GIRLSCRIPT SUMMER OF CODE",
@@ -61,7 +68,8 @@
     "start": "10/03/2021",
     "end": "31/05/2021",
     "organisation": "GirlScript Foundation",
-    "location": "Online"
+    "location": "Online",
+    "score":"1"
   },
   {
     "title": "Google Summer of Code",
@@ -69,7 +77,8 @@
     "start": "17/05/2021",
     "end": "23/08/2021",
     "organisation": "Multiple organisations like FOSSASIA,Redhat,ASF and many more ",
-    "location": "Online"
+    "location": "Online",
+    "score":"1" 
   },
   {
     "title": "MLH Fellowship",
@@ -77,7 +86,8 @@
     "start": "31/05/2021",
     "end": "23/08/2021",
     "organisation": "Github, Facebook, Dev and many more ",
-    "location": "Online"
+    "location": "Online",
+    "score":"1" 
   },
   {
     "title": "OUTREACHY",
@@ -85,15 +95,17 @@
     "start": "24/05/2021",
     "end": "24/08/2021",
     "organisation": "Collabora, Google, Mozilla, Red Hat and many more ",
-    "location": "Online"
-  },
+    "location": "Online",
+    "score":"1" 
+},
   {
     "title": "BOSS - Bountiful Open Source Summer (2021)",
     "website": "boss.codingblocks.com/",
     "start": "15/05/2021",
     "end": "15/08/2021",
     "organisation": "Coding Blocks Labs",
-    "location": "Online"
+    "location": "Online",
+    "score":"1" 
   },
   {
     "title": "RAILS GIRLS SUMMER OF CODE",
@@ -101,22 +113,25 @@
     "start": "01/07/2021",
     "end": "30/09/2021",
     "organisation": "Travis Foundation",
-    "location": "Online"
-  },
+    "location": "Online",
+  "score":"1" 
+},
   {
     "title": "MOZILLA FESTIVAL",
     "website": "www.mozillafestival.org/en",
     "start": "08/03/2021",
     "end": "14/03/2021",
     "organisation": "Mozilla Foundation",
-    "location": "Online"
-  },
+    "location": "Online",
+    "score":"1" 
+},
   {
     "title": "PROCESSING FOUNDATION FELLOWSHIP PROGRAM",
     "website": "processingfoundation.org/fellowships",
     "start": "02/04/2021",
     "end": "31/08/2021",
     "organisation": "Processing Foundation",
-    "location": "Online"
+    "location": "Online",
+   "score":"1" 
   }
 ]
