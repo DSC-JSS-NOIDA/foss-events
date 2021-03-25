@@ -262,6 +262,40 @@ footer {
   margin-top: 30px;
 }
 
+.center-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-table{
+  padding:10px 25px;
+  padding-bottom:30px;
+  min-width: 450px;
+  max-width:500px;
+  background-color: var(--primary-background);
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.input-container{
+  margin:30px 10px;
+}
+
+.contact-inputs{
+  margin-left: 5px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color:var(--primary-title);
+}
+
+.btn-md{
+  font-weight: 600;
+  background-color: #5cb85c;
+  color:var(--primary-background);
+  width:100%;
+}
+
 .navbar {
   position: fixed;
   width: 100%;
