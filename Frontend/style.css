@@ -4,7 +4,10 @@ body {
     height: 100%;
     overflow-x: hidden;
 }
+.fa-github:hover{
+    color: rgba(255, 255, 255, 0.705);
 
+}
 .card-container {
     width: 100%;
     display: flex;
