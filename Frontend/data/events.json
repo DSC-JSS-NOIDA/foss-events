@@ -104,13 +104,13 @@
     "location":"Online"
   },
   {
-    "title":"Open Summer of Code",
-    "website":"https://osoc.be/",
-    "start":"06/07/2021",
-    "end":"30/09/2021",
-    "organisation":"GitHub",  
-    "location":"Online"
-  },
+"title": "Open Summer of Code",
+"website": "osoc.be/",
+"start": "01/07/2021",
+"end": "31/07/2021",
+"organisation": "Open Knowledge Belgium, Hack Your Future, ID Lab, CogniZone and many more ",
+"location": "Online"
+},
   {
     "title":"Script Winter Of Code",
     "website":"https://swoc.tech/",
