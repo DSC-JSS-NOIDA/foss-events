@@ -3,11 +3,11 @@ const mongoose = require("mongoose");
 const events = require('../models/events');
 const event = require("../models/events");
 const auth = require("./users/auth");
-
+const limiter = require("./ratelimiter");
 // GET ROUTES
 
 // get request for displaying all events
-router.get("/", async (req, res) => {
+router.get("/",limiter , async (req, res) => {
   try {
     const data = await event.find({}).select("title date website");
     console.log(data);
