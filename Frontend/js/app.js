@@ -120,3 +120,21 @@ particlesJS('particles-js',
   }
 
 );
+
+// ScrollBar with % Counter
+const container = document.querySelector(".container-fluid");
+const progressBar = document.querySelector('.progressBar');
+const percentage = document.querySelector('.percentage');
+
+window.addEventListener('scroll', () => {
+	let containerHeight = container.offsetHeight - window.innerHeight;
+	let containerPos = container.getBoundingClientRect();
+	let diff = containerHeight + containerPos.top;
+	let progressPercentage = (diff / containerHeight) * 100;
+	let cssHeight = Math.floor(101 - progressPercentage);
+
+    if (cssHeight >= 0 && cssHeight <= 100) {
+      progressBar.style.height = cssHeight  + '%' ;
+      percentage.innerHTML = 'Page Scrolled ' + cssHeight + '%';
+    }
+})

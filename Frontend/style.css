@@ -662,3 +662,57 @@ footer {
     height: 0;
   }
 }
+
+/* ScrollBar with % Counter */
+
+.scrollBar {
+	position: fixed;
+	top: 55.333px;
+	left: 0;
+	width: 25px;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.05);
+  transition: 0.01s;
+  z-index: 100;
+
+}
+
+.progressBar {
+	position: fixed;
+	top: 55.333px;
+	left: 0;
+	width: 10px;
+  border-radius: 0 0 15px 15px;
+	background: #5cb85c;
+  transition: 0.01s;
+  z-index: 100;
+
+
+}
+.progressBar::after,
+.progressBar::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: #5cb85c;
+	filter: blur(10px);
+}
+.progressBar::after {
+	filter: blur(30px);
+}
+
+.percentage {
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%) rotateX(360deg) rotateY(360deg);
+	left: 15px;
+	color: var(--primary-title);
+	font-size: 1.2rem;
+	writing-mode: vertical-rl;
+	text-orientation: sideways-right;
+  z-index: 100;
+}
+
