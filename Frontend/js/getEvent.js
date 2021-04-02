@@ -58,118 +58,182 @@ fetch("./Frontend/data/events.json")
     }
   });
 
-// search an event
-let search = document.querySelector(".form-control");
-search.addEventListener("keyup", searchTerm);
+  
+// Filters for Events
 
-//function to search the event
-function searchTerm(e) {
-  var eventList = document.querySelectorAll('.empty_div');
-  let input = e.target.value.toLowerCase();
-  eventList.forEach(eventItem => {
-    let toSearch = eventItem.childNodes[0].children[0].childNodes[0].innerText;
-    if (toSearch.toLowerCase().indexOf(input) != -1) {
-      eventItem.style.display = 'block';
+// Search Filter Element
+const searchWrapper = document.querySelector(".search-input");
+const search = searchWrapper.querySelector("input");
+const suggBox = searchWrapper.querySelector(".autocom-box");
+const icon = searchWrapper.querySelector("i");
+search.addEventListener('keyup', applyFilter);
+
+// Event Status Filter Element
+let eventStatusFilterElement = document.querySelector('#event-status-filter');
+eventStatusFilterElement.addEventListener('change', applyFilter);
+
+// Event Range Start Element
+let eventRangeStartElement= document.getElementById("range-start");
+eventRangeStartElement.addEventListener('change', applyFilter);
+
+let eventRangeEndElement = document.getElementById("range-end");
+eventRangeEndElement.addEventListener('change', applyFilter);
+
+// Filter Event Function
+function applyFilter(){
+  let eventList = document.querySelectorAll('.empty_div');
+  Array.from(eventList).forEach( eventItem => {
+    eventItem.style.display = 'block';
+  });
+
+  let searchTerm = search.value.toLowerCase();
+  filterBySearchTerm(searchTerm, eventList,1);
+
+  let reqStatus = eventStatusFilterElement.value.toLowerCase();
+  filterByStatus(reqStatus, eventList);
+
+  let rangeStart = eventRangeStartElement.valueAsDate;
+  let rangeEnd = eventRangeEndElement.valueAsDate;
+  console.log(rangeStart, rangeEnd)
+  filterByRange(rangeStart, rangeEnd, eventList)
+
+}
+
+// Filter by Search Term
+function filterBySearchTerm(searchTerm, eventList,check) {
+  if(check == 1){
+    let userData = searchTerm; //user enetered data
+  let suggestions=[];
+  Array.from(eventList).forEach( eventItem => {
+    let eventTitle = eventItem.querySelector('.event_title').innerText.toLowerCase();
+    console.log(eventTitle);
+    suggestions.push(eventTitle);
+  });
+
+    let emptyArray = [];
+    if(userData){
+        icon.onclick = ()=>{
+
+        }
+        emptyArray = suggestions.filter((data)=>{
+            //filtering array value and user characters to lowercase and return only those words which are start with user enetered chars
+            return data.toLocaleLowerCase().startsWith(userData.toLocaleLowerCase()); 
+        });
+        emptyArray = emptyArray.map((data)=>{
+            // passing return data inside li tag
+            return data = '<li>'+ data +'</li>';
+        });
+        searchWrapper.classList.add("active"); //show autocomplete box
+        showSuggestions(emptyArray);
+        let allList = suggBox.querySelectorAll("li");
+        for (let i = 0; i < allList.length; i++) {
+            //adding onclick attribute in all li tag
+            allList[i].setAttribute("onclick", "select(this)");
+        }
+    }else{
+        searchWrapper.classList.remove("active"); //hide autocomplete box
     }
-    else {
+  }
+  
+  Array.from(eventList).forEach( eventItem => {
+
+    let eventTitle = eventItem.querySelector('.event_title').innerText.toLowerCase()
+
+    if (eventTitle.indexOf(searchTerm) == -1){
       eventItem.style.display = 'none';
     }
   });
 }
-
-
-// filter an event 
-let filterBtn = document.getElementById("filterSubmit");
-filterBtn.addEventListener('click', filterResult);
-
-// function to filter events
-function filterResult(e) {
-
-  var startFilter = document.getElementsByClassName("date-begin");
-  var endFilter = document.getElementsByClassName("date-end");
-
-  // checking that the value should not be null for both the input
-  if (startFilter[0].valueAsDate === null || endFilter[0].valueAsDate === null)
-    alert("Enter both the fields");
-
-
-  // the start date should always be less than end date 
-  else if (+(startFilter[0].valueAsDate) >= +(endFilter[0].valueAsDate))
-    alert("The Start Filter should be less than end Filter")
-
-  else {
-    // getting the left bound of the input range
-    var splitLeft = (startFilter[0].value).split('-');
-    var leftDate = new Date(splitLeft[0], splitLeft[1] - 1, splitLeft[2]);
-
-
-    // getting the right bound of the input range
-    var splitRight = (endFilter[0].value).split('-');
-    var rightDate = new Date(splitRight[0], splitRight[1] - 1, splitRight[2]);
-
-    var eventList = document.querySelectorAll('.empty_div');
-
-    eventList.forEach((event) => {
-      // getting the start dates for all events
-      var innerDate = (event.childNodes[0].children[1].childNodes[0].innerText);
-      var startSplit = ((innerDate.split(':'))[1]).split('/')
-
-      var startDate = new Date(startSplit[2], startSplit[1] - 1, startSplit[0]);
+function select(element){
+  let selectData = element.textContent;
+  search.value = selectData.toUpperCase();
+  icon.onclick = ()=>{
       
-
-
-      // getting the end dates for all events
-      var outerDate = (event.childNodes[0].children[1].childNodes[1].innerText);
-      var endSplit = ((outerDate.split(':'))[1]).split('/')
-
-      var endDate = new Date(endSplit[2], endSplit[1] - 1, endSplit[0]);
-     
-
-
-      // comparison between the dates
-      if (rightDate > startDate && leftDate < endDate)
-        event.style.display = 'block';
-      else {
-        event.style.display = 'none';
-      }
-
-    })
   }
+  searchWrapper.classList.remove("active");
+  let eventList = document.querySelectorAll('.empty_div');
+  let searchTerm = search.value.toLowerCase();
+  filterBySearchTerm(searchTerm, eventList,0);
 }
 
+function showSuggestions(list){
+  let listData;
+  if(!list.length){
+      userValue = search.value;
+      listData = '<li>'+ userValue +'</li>';
+  }else{
+      listData = list.join('');
+  }
+  suggBox.innerHTML = listData;
+}
 
+// Filter by Status
+function filterByStatus(reqStatus, eventList) {
+  let notReqClass = '';
+  if( reqStatus == 'online') {
+    notReqClass = '.locationOffline'
+  }
+  else if(reqStatus == 'offline') {
+    notReqClass = '.locationOnline'
+  }
+  else {
+    return;
+  }
 
+  Array.from(eventList).forEach( eventItem => {
 
+    let currentEventStatus = eventItem.querySelector(notReqClass)  
 
- 
+    if (currentEventStatus) {
+      eventItem.style.display = 'none';
+    }
 
+  });
+}
 
+// Filter by Range
+function filterByRange(rangeStart, rangeEnd, eventList) {
+  if(rangeStart == null) {
+    rangeStart = new Date('0001-01-01T00:00:00Z');
+  }
 
+  if(rangeEnd == null) {  
+    rangeEnd = new Date((new Date().getFullYear()) + 100,1,1);
+  }
 
+  // the rangeStart should always be less than rangeEnd
+  if (rangeStart.getTime() >= rangeEnd.getTime()) {
+    alert("The Range Start should be less than Range End");
+    return;
+  }
 
+  Array.from(eventList).forEach( eventItem => {
 
+    let eventStartDateStr = eventItem.querySelectorAll(".date")[0].innerText.split(':')[1].split('/')
+    let eventEndDateStr = eventItem.querySelectorAll(".date")[1].innerText.split(':')[1].split('/')
 
+    
+    let eventStartDate = new Date(eventStartDateStr[2], eventStartDateStr[1] - 1, eventStartDateStr[0]);
+    let eventEndDate = new Date(eventEndDateStr[2], eventEndDateStr[1] - 1, eventEndDateStr[0]);
 
+    if ( (rangeEnd.getTime() <= eventStartDate.getTime()) || (rangeStart.getTime() >= eventEndDate.getTime())) {
+        eventItem.style.display = 'none';
+    }
+
+  });
+
+}
+
+// Filters for Event Ends
 
 const toggleSwitch=document.querySelector('.custom-control-input');
-const text=document.querySelector('.custom-control-label');
-function darkMode(){
-  text.children[0].textContent="Dark";
-  text.children[1].classList.replace('fa-sun-o','fa-moon-o');
-}
-function lightMode() {
-  text.children[0].textContent = "Light";
-  text.children[1].classList.replace("fa-moon-o", "fa-sun-o");
-}
 function switchTheme(event) {
   if (event.target.checked) {
     document.documentElement.setAttribute("data-theme", "dark");
     localStorage.setItem("theme", "dark");
-    darkMode();
   } else {
     document.documentElement.setAttribute("data-theme", "light");
     localStorage.setItem("theme", "light");
-    lightMode();
   }
 }
 toggleSwitch.addEventListener("change", switchTheme);
@@ -179,7 +243,6 @@ if (currentTheme) {
 
   if (currentTheme === "dark") {
     toggleSwitch.checked = true;
-    darkMode();
   }
 }
 
@@ -193,3 +256,54 @@ window.addEventListener("scroll", () => {
     Top.classList.remove("active");
   }
 });
+
+window.addEventListener("DOMContentLoaded", function () {
+  // get the form elements defined in your form HTML above
+
+  var form = document.getElementById("my-form");
+  var name = document.getElementById("validationCustom01");
+  var email = document.getElementById("validationCustom02");
+  var message = document.getElementById("validationCustom03");
+  // var button = document.getElementById("my-form-button");
+  var status = document.getElementById("status");
+  // Success and Error functions for after the form is submitted
+
+  function success() {
+    form.value='';
+    name.value='';
+    email.value='';
+    message.value='';
+    status.classList.add("success");
+    status.innerHTML = "Thanks!";
+  }
+
+  function error() {
+    status.classList.add("error");
+    status.innerHTML = "Oops! There was a problem.";
+  }
+
+  // handle the form submission event
+
+  form.addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    var data = new FormData(form);
+    ajax(form.method, form.action, data, success, error);
+  });
+});
+
+// helper function for sending an AJAX request
+
+function ajax(method, url, data, success, error) {
+  var xhr = new XMLHttpRequest();
+  xhr.open(method, url);
+  xhr.setRequestHeader("Accept", "application/json");
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState !== XMLHttpRequest.DONE) return;
+    if (xhr.status === 200) {
+      success(xhr.response, xhr.responseType);
+    } else {
+      error(xhr.status, xhr.response, xhr.responseType);
+    }
+  };
+  xhr.send(data);
+}

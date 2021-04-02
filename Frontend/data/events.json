@@ -127,6 +127,118 @@
     "end": "31/08/2021",
     "organisation": "Processing Foundation",
     "location": "Online"
+  },
+  {
+    "title":"GOOGLE SEASON OF DOCS",
+    "website":"developers.google.com/season-of-docs/docs/timeline",
+    "start": "17/05/2021",
+    "end": "30/11/2021",
+    "organisation": "Multiple organisations like Apache Airflow,Arduino,CERN-HSF",
+    "location": "Online"
+  },
+  {
+    "title": "Alibaba Summer of Code",
+    "website": "www.alibabacloud.com/campaign/summerofcode2020?spm=a2c65.11461447.0.0.15b575814Tc7U1",
+    "start": "25/05/2021",
+    "end": "05/09/2021",
+    "organisation": "SQL Flow, Sentinel, DragonFly and many more ",
+    "location": "Online"
+  },
+  {
+    "title": "ERPNext Summer of Code",
+    "website": "erpnext.org/esoc",
+    "start": "03/04/2021",
+    "end": "22/08/2021",
+    "organisation": "Zerodha, CloudE8, Elastic Run and many more ",
+    "location": "Online"
+  },
+  {
+    "title": "Digital Ocean Hacktoberfest",
+    "website": "hacktoberfest.digitalocean.com/",
+    "start": "01/10/2021",
+    "end": "31/10/2021",
+    "organisation": "DigitalOcean, intel, Github, Dev and many more ",
+    "location": "Online"
+  },
+  {
+    "title": "Season of KDE",
+    "website": "season.kde.org/",
+    "start": "04/12/2020",
+    "end": "12/04/2021",
+    "organisation": "KDE Community",
+    "location": "Online"
+  },
+  {
+    "title": "Open Mainframe Project Mentorship Program",
+    "website": "www.openmainframeproject.org/projects/mentorship-program",
+    "start": "01/03/2021",
+    "end": "01/07/2021",
+    "organisation": "IBM, Red Hat, Rocket, Broadcom and many more",
+    "location": "Online"
+  },
+  {
+    "title": "Linux Kernel Mentorship Program",
+    "website": "wiki.linuxfoundation.org/lkmp",
+    "start": "09/03/2021",
+    "end": "21/08/2021",
+    "organisation": "Red Hat, Linux Foundation",
+    "location": "Online"
+  },
+  {
+    "title": "Redox OS Summer of Code",
+    "website": "www.redox-os.org/rsoc/",
+    "start": "01/03/2021",
+    "end": "01/07/2021",
+    "organisation": "Redox Foundation, Github",
+    "location": "Online"
+  },
+  {
+    "title": "CrossWoc",
+    "website": "crosswoc.ieeedtu.in/",
+    "start": "13/02/2021",
+    "end": "28/03/2021",
+    "organisation": "IEEE DTU, IEEE DTU CS",
+    "location": "Online"
+  },
+  {
+    "title": "DevOps India Summit 2021",
+    "website": "devopsindiasummit.com/",
+    "start": "27/08/2021",
+    "end": "28/08/2021",
+    "organisation": "Xellentro",
+    "location": "Online"
+  },
+  {
+    "title": "Google Summer of Earth Engine",
+    "website": "sites.google.com/view/summerofearthengine/home",
+    "start": "15/03/2021",
+    "end": "15/08/2021",
+    "organisation": "Google",
+    "location": "Online"
+  },
+  {
+    "title": "GUADEC",
+    "website": "events.gnome.org/event/9/",
+    "start": "21/07/2021",
+    "end": "25/07/2021",
+    "organisation": "The GNOME Foundation",
+    "location": "Online"
+  },
+  {
+    "title": "SOCIS – The ESA Summer of Code in Space",
+    "website": "www.esa.int/Enabling_Support/Space_Engineering_Technology/SOCIS_The_ESA_Summer_of_Code_in_Space",
+    "start": "31/03/2021",
+    "end": "01/10/2021",
+    "organisation": "European Space Agency",
+    "location": "Online"
+  },
+  {
+    "title": "OpenTechSummit Europe",
+    "website": "eventyay.com/e/5ac8e4d9",
+    "start": "17/05/2021",
+    "end": "21/05/2021",
+    "organisation": "FOSSASIA",
+    "location": "Online"
   }
 ]
 

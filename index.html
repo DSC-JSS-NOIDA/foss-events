@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html" />
     <title>Foss Events</title>
     <!-- CSS only -->
     <link
@@ -18,7 +19,14 @@
     />
   </head>
   <body>
-    <!-- Navbar Starts -->
+    <!--Preloader Class-->
+    <div class="forloader">
+      <div id="loader2"></div> 
+    </div>
+     <!--Background animation-->
+    <div class="home-area" id="particles-js"></div>
+    <div id="contents-page">
+      <!-- Navbar Starts -->
     <nav class="navbar navbar-light bg-dark">
       <a class="navbar-brand text-white" href="#">FossEvents</a>
       <div class="navbar-nav ml-auto toogle-slider">
@@ -28,10 +36,7 @@
             class="custom-control-input"
             id="customSwitches"
           />
-          <label class="custom-control-label" for="customSwitches"
-            ><span>Light</span
-            ><i class="fa fa-sun-o mr-1 ml-1" aria-hidden="true"></i
-          ></label>
+          <label class="custom-control-label" for="customSwitches"></label>
         </div>
       </div>
       <a
@@ -42,26 +47,53 @@
       ></a>
     </nav>
     <!-- Navbar Ends -->
-    <!--Background animation-->
-    <div class="home-area" id="particles-js"></div>
     <!-- Main Content -->
     <div class="container-fluid mt-5">
-    <!-- Search Bar -->
-      <input class="container form-control" placeholder="Search for event here ...">
-      <br>
 
-      
-      <!-- Filter Container-->
-      <div class="form-group text-center">
-        <h5 class="text-center"> Use this filter to get events according to a particular range! </h5>
-        <label>Left Bound <input type="date" class="form-control date-begin" style ="margin-top: 0;"></label>
-        <label>Right Bound <input type="date" class="form-control date-end" style ="margin-top: 0;" ></label>
-        <button class="btn btn-primary btn-success input-group-btn" id="filterSubmit">Filter</button>
+      <!-- Events Filter -->
+      <div class="d-flex filter-container">
+
+        <!-- Search Filter -->
+        <div class="form-group flex-fill search-input">
+          <i class="fa fa-search icon"></i>
+          <input class="form-control" id="search-filter" placeholder="Search for an event here ...">
+          <div class="autocom-box">
+            <!-- here list are inserted from javascript -->
+          </div>
+        </div>
+        <!-- Search Filter Ends -->
+
+        <!-- Event Status Filter -->
+        <div class="form-group">
+          <label class="filter-labels">Status</label>
+          <select class="form-control" id="event-status-filter" name="Event Status Filter">
+            <option value="All">All</option>
+            <option value="Online">Online</option>
+            <option value="Offline">Offline</option>
+          </select>
+        </div>
+        <!-- Event Status Filter Ends -->
+
+        <!-- Event Date Filter -->
+
+          <!-- Event Date Range Start -->
+          <div class="form-group">
+            <label class="filter-labels">Range Start</label>
+            <input type="date" class="form-control" id="range-start">
+          </div>
+          <!-- Event Date Range Start Ends -->
+
+          <!-- Event Date Range End -->
+          <div class="form-group">
+            <label class="filter-labels">Range End</label>
+            <input type="date" class="form-control" id="range-end">
+          </div>
+          <!-- Event Date Range End Ends -->
+
+        <!-- Event Date Filter Ends -->
+
       </div>
-          
-      
-    
-
+      <!-- Events Filter Ends-->
 
       <!-- Card Container -->
       <div class="card-container"></div>
@@ -70,6 +102,55 @@
     <!-- Main Content Ends -->
 
     <!-- Footer starts -->
+    <section id="contactus">
+      <p id="contact-head">Contact us</p>
+      <p id="contact-message">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within a matter of hours to help you.</p>
+      <div class="container">
+        <div id="form-footer" class="row">
+          <div class="col-md-8">
+            <div class="center-div">
+              <div class="contact-table">
+                <form action="https://formspree.io/f/xdoynnyq" method="POST" id="my-form">
+                  <div class="input-container">
+                    <label class="contact-inputs" for="validationCustom01">Your Name :</label>
+                    <input type="text" class="form-control contact-inputs-tags" id="validationCustom01" placeholder="Enter your name" name="name">
+                  </div>
+                  <div class="input-container">
+                    <label class="contact-inputs" for="validationCustom02">Your Email :</label>
+                    <input type="email" class="form-control contact-input-tags" id="validationCustom02" placeholder="Enter your email address" name="email">
+                  </div>
+                  <div class="input-container">
+                    <label class="contact-inputs" for="validationCustom03">Message :</label>
+                    <textarea type="text" class="form-control contact-input-tags" id="validationCustom03" placeholder="Enter your message here . . ." rows="4" name="message"></textarea>
+                  </div>
+                  <div>
+                    <button class="btn btn-md" type="submit">SUBMIT</button>
+                  </div>
+                </form>
+                <div id="status"></div>
+              </div>
+            </div>
+          </div>
+          <div id="social-section" class="col-md-4">
+            <div style="padding:0px 20px;padding-bottom: 15px;border-bottom:3.5px solid grey">
+              <p class="footer-details"><a href="https://www.dscjss.in/" target="_blank"><span class="contacts"><i class="fa fa-map-marker mr-5 social-icon" aria-hidden="true"></i>DSC JSS Noida</span></a></p>
+              <p class="footer-details"><a href="mailto:dscjssnoida@gmail.com" target="_blank"><span class="contacts"><i class="fa fa-envelope mr-5 social-icon" aria-hidden="true"></i>dscjssnoida@gmail.com</span></a></p>
+              <p class="footer-details"><a href="tel:+91 9876543310"><span class="contacts"><i class="fa fa-phone mr-5 social-icon" aria-hidden="true"></i>+91 9876543310</span></a></p>
+            </div>
+            <div id="social-media-icons">
+            <a href="https://www.facebook.com/dscjssnoida/" target="_blank" title="Facebook"><i class="fa fa-facebook-square social-media" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/company/dsc-jssaten/" target="_blank" title="Linkedin"><i class="fa fa-linkedin-square social-media" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/DSCJSSATEN" target="_blank" title="Twitter"><i class="fa fa-twitter social-media" aria-hidden="true"></i></a>
+            <a href="https://github.com/DSC-JSS-NOIDA" target="_blank" title="Github"><i class="fa fa-github social-media" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/dscjssaten/?igshid=9ubqtp1ssqsi" target="_blank" title="Instagram"><i class="fa fa-instagram social-media" aria-hidden="true"></i></a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </section>
     <footer>
       <div class="footer">
         Made with &#10084; By <a href="https://dscjss.in">DSC JSSATEN</a>
@@ -117,5 +198,12 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
+      <!--Preloader Script-->
+    <script> 
+        $(window).on('load',function(){
+         $('.forloader').addClass('complete')
+        })
+      </script>
+    </div>
   </body>
 </html>
