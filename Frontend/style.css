@@ -56,6 +56,43 @@ html {
   scroll-behavior: smooth;
 }
 
+.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link{
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-light .navbar-brand:hover, .navbar-light .navbar-nav .nav-link:hover{
+  color: #5ce95c;
+}
+
+#aboutUs{
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#aboutUs div{
+  width: 70%;
+  height: 50%;
+}
+
+#mainHeading{
+  color:#5cb85c;
+  font-size: 3rem;
+}
+
+#paraGraph{
+  font-size: 1.4rem;
+  color: var(--primary-title);
+}
+
+
+
+
+
+
 /*Particle js background animation*/
 .home-area {
   height: 100%;
@@ -422,7 +459,12 @@ footer {
   margin: 30px 10px;
 }
 
-.contact-inputs {
+
+.social-icon {
+  display: inline-block;
+  width:10px;
+}
+.contact-inputs{
   margin-left: 5px;
   margin-bottom: 12px;
   font-size: 14px;
