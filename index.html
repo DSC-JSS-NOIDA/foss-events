@@ -19,14 +19,19 @@
     />
   </head>
   <body>
+    <!--Preloader Class-->
+    <div class="forloader">
+      <div id="loader2"></div> 
+    </div>
      <!--Background animation-->
     <div class="home-area" id="particles-js"></div>
     <div id="contents-page">
       <!-- Navbar Starts -->
-    <nav class="navbar navbar-light bg-dark">
-      <a class="navbar-brand text-white" href="#">FossEvents</a>
+    <nav class="navbar navbar-light bg-dark navbar-expand-md">
+      <a class="navbar-brand" href="/#aboutUs">FossEvents</a>
+
       <div class="navbar-nav ml-auto toogle-slider">
-        <div class="custom-control custom-switch">
+        <div class="custom-control custom-switch"> 
           <input
             type="checkbox"
             class="custom-control-input"
@@ -35,16 +40,31 @@
           <label class="custom-control-label" for="customSwitches"></label>
         </div>
       </div>
-      <a
-        href="https://github.com/DSC-JSS-NOIDA"
-        target="_blank"
-        style="text-decoration: none; color: white"
-        ><i class="fa fa-github" id="links" style="font-size: 36px"></i
-      ></a>
+
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#list" aria-label="Toggle Navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="list">
+        <ul class="navbar-nav">
+          <li class="navbar-item"><a href="/#aboutUs" class="nav-link">About Us</a></li>
+          <li class="navbar-item"><a href="/#events" class="nav-link">Events</a></li>
+          <li class="navbar-item"><a href="/#contactus" class="nav-link">Contact Us</a></li>
+        </ul>
+      </div>
     </nav>
     <!-- Navbar Ends -->
     <!-- Main Content -->
-    <div class="container-fluid mt-5">
+    
+    <section class="container" id="aboutUs">
+      <div>
+        <h1 id="mainHeading" class="pb-3">Searching for an open source program? Here we are!</h1>
+        <hr style="border: 1px solid #5cb85c;">
+        <p id="paraGraph">Greetings! Hope you all are doing good. Want to contribute to open source and don't know what program to participate in? Welcome to our website, we keep track of nearly every open source program that is held across the world. We post all the necessary details related to any particular program you want to take part in, whether it is active or not, their registration details, their page link and so on. It will be super easy for you to know about any program and choose accordingly. Hope you like our services. Cheers.</p>
+      </div>
+    </section>
+    
+    <div class="container-fluid mt-5" id="events">
 
       <!-- Events Filter -->
       <div class="d-flex filter-container">
@@ -129,9 +149,9 @@
           </div>
           <div id="social-section" class="col-md-4">
             <div style="padding:0px 20px;padding-bottom: 15px;border-bottom:3.5px solid grey">
-              <p class="footer-details"><a href="https://www.dscjss.in/" target="_blank"><span class="contacts"><i class="fa fa-map-marker mr-5" aria-hidden="true"></i>DSC JSS Noida</span></a></p>
-              <p class="footer-details"><a href="mailto:dscjssnoida@gmail.com" target="_blank"><span class="contacts"><i class="fa fa-envelope mr-5" aria-hidden="true"></i>dscjssnoida@gmail.com</span></a></p>
-              <p class="footer-details"><a href="tel:+91 9876543310"><span class="contacts"><i class="fa fa-phone mr-5" aria-hidden="true"></i>+91 9876543310</span></a></p>
+              <p class="footer-details"><a href="https://www.dscjss.in/" target="_blank"><span class="contacts"><i class="fa fa-map-marker mr-5 social-icon" aria-hidden="true"></i>DSC JSS Noida</span></a></p>
+              <p class="footer-details"><a href="mailto:dscjssnoida@gmail.com" target="_blank"><span class="contacts"><i class="fa fa-envelope mr-5 social-icon" aria-hidden="true"></i>dscjssnoida@gmail.com</span></a></p>
+              <p class="footer-details"><a href="tel:+91 9876543310"><span class="contacts"><i class="fa fa-phone mr-5 social-icon" aria-hidden="true"></i>+91 9876543310</span></a></p>
             </div>
             <div id="social-media-icons">
             <a href="https://www.facebook.com/dscjssnoida/" target="_blank" title="Facebook"><i class="fa fa-facebook-square social-media" aria-hidden="true"></i></a>
@@ -194,6 +214,12 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
+      <!--Preloader Script-->
+    <script> 
+        $(window).on('load',function(){
+         $('.forloader').addClass('complete')
+        })
+      </script>
     </div>
   </body>
 </html>
