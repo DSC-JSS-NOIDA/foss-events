@@ -90,6 +90,7 @@ function applyFilter(){
   // ends
 
   let eventList = document.querySelectorAll('.empty_div');
+  let eventCount=eventList.length;
   Array.from(eventList).forEach( eventItem => {
     eventItem.style.display = 'block';
   });
@@ -104,7 +105,23 @@ function applyFilter(){
   let rangeEnd = eventRangeEndElement.valueAsDate;
   console.log(rangeStart, rangeEnd)
   filterByRange(rangeStart, rangeEnd, eventList)
-
+  
+  //Display no result message
+  Array.from(eventList).forEach( eventItem => {
+    if (eventItem.style.display == 'none'){
+     eventCount--;
+    }
+  }); 
+  if(eventCount==0){
+    let cardContainer = document.getElementsByClassName("card-container")[0];
+    let noResult = document.createElement("div");
+    noResult.className = "no_result";
+    let heading = document.createElement("h3");
+    heading.innerText = "Sorry 😞 ! No Event found 🔍";
+    noResult.appendChild(heading);
+    cardContainer.appendChild(noResult); 
+    }
+  //Display message ends
 }
 
 // Filter by Search Term
@@ -214,7 +231,7 @@ function filterByRange(rangeStart, rangeEnd, eventList) {
     alert("The Range Start should be less than Range End");
     return;
   }
-  let eventCount=eventList.length;
+ 
   Array.from(eventList).forEach( eventItem => {
 
     let eventStartDateStr = eventItem.querySelectorAll(".date")[0].innerText.split(':')[1].split('/')
@@ -226,20 +243,9 @@ function filterByRange(rangeStart, rangeEnd, eventList) {
 
     if ( (rangeEnd.getTime() <= eventStartDate.getTime()) || (rangeStart.getTime() >= eventEndDate.getTime())) {
         eventItem.style.display = 'none';
-        eventCount--;
     }
   });
   
-  // Display for No Search Result
-  if(eventCount==0){
-    let cardContainer = document.getElementsByClassName("card-container")[0];
-    let noResult = document.createElement("div");
-    noResult.className = "no_result";
-    let heading = document.createElement("h3");
-    heading.innerText = "Sorry ! No event to display in this range";
-    noResult.appendChild(heading);
-    cardContainer.appendChild(noResult); 
-  }
 }
 
 // Filters for Event Ends
