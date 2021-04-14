@@ -12,6 +12,7 @@
 [data-theme="dark"] {
   --primary-background: #010409;
   --primary-border-card: rgba(255, 255, 255, 0.125);
+  --primary-no_result:  #f0f6fc;
   --primary-date: #696969;
   --primary-title: #f0f6fc;
   --primary-organisation: rgba(245, 245, 245, 0.88);
@@ -48,12 +49,51 @@ body {
    width: 100%;
   overflow-x: hidden;
   z-index:-10;
+  transition:2s;
   background-color: var(--primary-background);
 }
 
 html {
   scroll-behavior: smooth;
 }
+
+.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link{
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-light .navbar-brand:hover, .navbar-light .navbar-nav .nav-link:hover{
+  color: #5ce95c;
+}
+
+#aboutUs{
+  padding-top: 30%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#aboutUs div{
+  width: 70%;
+  height: 50%;
+}
+
+#mainHeading{
+  color:#5cb85c;
+  font-size: 3rem;
+}
+
+#paraGraph{
+  font-size: 1.4rem;
+  color: var(--primary-title);
+}
+
+
+
+
+
 
 /*Particle js background animation*/
 .home-area {
@@ -236,6 +276,26 @@ position: relative;
   margin-bottom: 150px;
 }
 
+.no_result{
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  border: 2px solid var(--primary-border-card);
+  border-radius: 5px;
+  padding: 30px;
+  color: var(--primary-no_result);
+  align-items: center;
+  margin: 30px;
+  width: -webkit-fill-available;
+  min-height: 1rem;
+  word-wrap: normal;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  border-bottom-color: #5cb85c;
+  border-bottom-width: 4px;
+  box-shadow: 0 8px 16px 0 #5cb85c;
+}
+
 .empty_div {
   position: relative;
   transition: all 0.5s ease;
@@ -397,6 +457,10 @@ footer {
   margin:30px 10px;
 }
 
+.social-icon {
+  display: inline-block;
+  width:10px;
+}
 .contact-inputs{
   margin-left: 5px;
   margin-bottom: 12px;
@@ -557,3 +621,168 @@ footer {
     font-size: 0.9rem;
   }
 }
+
+/* Preloader Css */
+
+.forloader{
+  position: fixed;
+  z-index: 99999;
+  top:0;
+  left:0;
+  /* background: #000; */
+  width:100vw;
+  height: 100vh;
+  transition: 2s;
+}
+.forloader::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width:50vw;
+  background: #000; 
+  transition: 2s;
+}
+.forloader:after{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  background: #000; 
+  width:50vw;
+  transition: 2s;
+}
+.forloader.complete:before{
+  left:-50%;
+}
+.forloader.complete:after{
+  right:-50%;
+}
+.forloader.complete{
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+#loader2{
+  position: absolute;
+  top:50vh;
+  left:50vw;
+  border: 4px solid #fff;
+  width:50px;
+  height: 50px;
+  animation: cube 2s linear infinite;
+  z-index: 100000;
+}
+#loader2::before{
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  animation:cubebg 2s linear infinite;
+}
+@keyframes cube{
+  0%
+  {
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(180deg);
+  }
+  50%{
+    transform: rotate(180deg);
+  }
+  75%{
+    transform: rotate(360deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+@keyframes cubebg{
+  0%
+  {
+    height: 0;
+  }
+  25%{
+    height: 0;
+  }
+  50%{
+    height: 100%;
+  }
+  75%{
+    height: 100%;
+  }
+  100%{
+    height: 0;
+  }
+}
+
+/*Responsive_Design*/
+@media(max-width: 574px){
+  #mainHeading{
+    font-size: 7vw;
+  }
+  
+  #paraGraph{
+    font-size: 5vw;
+  }
+
+#aboutUs{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: left;
+  padding-left: 15%;
+  padding-top: 50%;
+}
+
+#aboutUs div{
+  width: 80%;
+  height: 45%;
+}
+.filter-container{
+  display: flex;
+  flex-direction: left;
+  padding-left: 10%;
+}
+.filter-container{
+  margin: 0px 0px;
+  width: 80%;
+  height: 35%;
+}
+#contact-head{
+  text-align: left;
+  border-bottom: none;
+  padding-left: 15%;
+}
+
+#contact-message{
+  text-align: left;
+  font-size: 15px;
+  margin:0px 0px;
+  width: 85%;
+  height: 30%;
+  padding-left: 15%;
+}
+.contact-table{
+  min-width: 30px;
+}
+.contact-inputs{
+  margin-left: 0px;
+ 
+}
+.form-control{
+  font-size: 17px;
+  padding-left: 20px;
+}
+.footer-details{
+  font-size: 15px;
+}
+}
+
+
