@@ -81,7 +81,16 @@ eventRangeEndElement.addEventListener('change', applyFilter);
 
 // Filter Event Function
 function applyFilter(){
+  
+  // To remove all class of no_result
+  let cardContainer = document.getElementsByClassName("card-container")[0];
+  let elements = cardContainer.getElementsByClassName('no_result');
+  while (elements[0])
+      elements[0].parentNode.removeChild(elements[0])
+  // ends
+
   let eventList = document.querySelectorAll('.empty_div');
+  let eventCount=eventList.length;
   Array.from(eventList).forEach( eventItem => {
     eventItem.style.display = 'block';
   });
@@ -96,7 +105,23 @@ function applyFilter(){
   let rangeEnd = eventRangeEndElement.valueAsDate;
   console.log(rangeStart, rangeEnd)
   filterByRange(rangeStart, rangeEnd, eventList)
-
+  
+  //Display no result message
+  Array.from(eventList).forEach( eventItem => {
+    if (eventItem.style.display == 'none'){
+     eventCount--;
+    }
+  }); 
+  if(eventCount==0){
+    let cardContainer = document.getElementsByClassName("card-container")[0];
+    let noResult = document.createElement("div");
+    noResult.className = "no_result";
+    let heading = document.createElement("h3");
+    heading.innerText = "Sorry 😞 ! No Event found 🔍";
+    noResult.appendChild(heading);
+    cardContainer.appendChild(noResult); 
+    }
+  //Display message ends
 }
 
 // Filter by Search Term
@@ -206,7 +231,7 @@ function filterByRange(rangeStart, rangeEnd, eventList) {
     alert("The Range Start should be less than Range End");
     return;
   }
-
+ 
   Array.from(eventList).forEach( eventItem => {
 
     let eventStartDateStr = eventItem.querySelectorAll(".date")[0].innerText.split(':')[1].split('/')
@@ -219,9 +244,8 @@ function filterByRange(rangeStart, rangeEnd, eventList) {
     if ( (rangeEnd.getTime() <= eventStartDate.getTime()) || (rangeStart.getTime() >= eventEndDate.getTime())) {
         eventItem.style.display = 'none';
     }
-
   });
-
+  
 }
 
 // Filters for Event Ends

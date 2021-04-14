@@ -239,6 +239,23 @@
     "end": "21/05/2021",
     "organisation": "FOSSASIA",
     "location": "Online"
+  },
+  {
+    "title": "NWOC",
+    "website": "https://njackwinterofcode.github.io/",
+    "start": "1/12/2021",
+    "end": "6/01/2022",
+    "organisation": "NJACK IIT Patna",
+    "location": "Online"
+  },
+  {
+    "title": "KWOC",
+    "website": "https://kwoc.kossiitkgp.org/",
+    "start": "6/12/2021",
+    "end": "4/01/2022",
+    "organisation": "KOSS,IIT Kharagpur",
+    "location": "Online"
   }
+
 ]
 
