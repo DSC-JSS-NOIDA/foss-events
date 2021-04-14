@@ -1,4 +1,5 @@
 
+
 *{
     box-sizing: border-box;
 }
@@ -361,6 +362,26 @@ position: relative;
   padding-top: 20px;
   flex-wrap: wrap;
   margin-bottom: 150px;
+}
+
+.no_result{
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  border: 2px solid var(--primary-border-card);
+  border-radius: 5px;
+  padding: 30px;
+  color: var(--primary-no_result);
+  align-items: center;
+  margin: 30px;
+  width: -webkit-fill-available;
+  min-height: 1rem;
+  word-wrap: normal;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  border-bottom-color: #5cb85c;
+  border-bottom-width: 4px;
+  box-shadow: 0 8px 16px 0 #5cb85c;
 }
 
 .empty_div {
@@ -787,165 +808,3 @@ footer {
   100%{
     height: 0;
   }
-<<<<<<< HEAD
-
-aside {
-    max-width: 700px;
-    margin: auto;
-}
-.survey-hr {
-    margin: 30px 0;
-    border: .5px solid #ddd;
-}
-.star-rating {
-    margin: 25px 0 0px;
-    font-size: 0;
-    white-space: nowrap;
-    display: inline-block;
-    width: 175px;
-    height: 35px;
-    overflow: hidden;
-    position: relative;
-    background: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjREREREREIiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=');
-    background-size: contain;
-}
-.star-rating i {
-    opacity: 0;
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 20%;
-    z-index: 1;
-    background: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjRkZERjg4IiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=');
-    background-size: contain;
-}
-.star-rating input {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    opacity: 0;
-    display: inline-block;
-    width: 20%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    z-index: 2;
-    position: relative;
-}
-.star-rating input:hover+i,
-.star-rating input:checked+i {
-  opacity: 1;
-}
-.star-rating i~i {
-    width: 40%;
-  }
-  
-  .star-rating i~i~i {
-    width: 60%;
-  }
-  
-  .star-rating i~i~i~i {
-    width: 80%;
-  }
-  
-  .star-rating i~i~i~i~i {
-    width: 100%;
-  }
-  
-  .choice {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    padding: 20px;
-    display: block;
-  }
-  
-  span.scale-rating {
-    margin: 5px 0 15px;
-    display: inline-block;
-  
-    width: 100%;
-  
-  }
-  span.scale-rating>label {
-    position: relative;
-    -webkit-appearance: none;
-    outline: 0 !important;
-    border: 1px solid grey;
-    height: 33px;
-    margin: 0 5px 0 0;
-    width: calc(10% - 7px);
-    float: left;
-    cursor: pointer;
-  }
-  
-  span.scale-rating label {
-    position: relative;
-    -webkit-appearance: none;
-    outline: 0 !important;
-    height: 33px;
-    margin: 0 5px 0 0;
-    width: calc(10% - 7px);
-    float: left;
-    cursor: pointer;
-  }
-  
-  span.scale-rating input[type=radio] {
-    position: absolute;
-    -webkit-appearance: none;
-    opacity: 0;
-    outline: 0 !important;
-    /*border-right: 1px solid grey;*/
-    height: 33px;
-    margin: 0 5px 0 0;
-  
-    width: 100%;
-    float: left;
-    cursor: pointer;
-    z-index: 3;
-  }
-  
-  span.scale-rating label:hover {
-    background: #fddf8d;
-  }
-  
-  span.scale-rating input[type=radio]:last-child {
-    border-right: 0;
-  }
-  
-  span.scale-rating label input[type=radio]:checked~label {
-    -webkit-appearance: none;
-  
-    margin: 0;
-    background: #fddf8d;
-  }
-  
-  span.scale-rating label:before {
-    content: attr(value);
-    top: 7px;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    text-align: center;
-    vertical-align: middle;
-    z-index: 2;
-  }
-  
-form {
-    color: hsl(58, 100%, 48%);
-    font-size: 18px;
-}
-
-label {
-    color: #000;
-    font-weight:  bold;
-}
-
- 
-
-=======
-}
->>>>>>> c66471f0b49cd6d004ef51251fe2c81ef1f0b845
