@@ -32,16 +32,43 @@
     <!-- Navbar Starts -->
 
     <!----
-    <nav class="navbar navbar-light bg-dark">
-      <a class="navbar-brand text-white" href="#">FossEvents</a>
+    <nav class="navbar navbar-light bg-dark navbar-expand-md">
+        <a class="navbar-brand" href="/#aboutUs">FossEvents</a>
 
-      <a
-        href="https://github.com/DSC-JSS-NOIDA"
-        target="_blank"
-        style="text-decoration: none; color: white"
-        ><i class="fa fa-github" id="links" style="font-size: 36px"></i
-      ></a>
-    </nav>
+        <div class="navbar-nav ml-auto toogle-slider">
+          <div class="custom-control custom-switch">
+            <input
+              type="checkbox"
+              class="custom-control-input"
+              id="customSwitches"
+            />
+            <label class="custom-control-label" for="customSwitches"></label>
+          </div>
+        </div>
+
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#list"
+          aria-label="Toggle Navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="list">
+          <ul class="navbar-nav">
+            <li class="navbar-item">
+              <a href="/#aboutUs" class="nav-link">About Us</a>
+            </li>
+            <li class="navbar-item">
+              <a href="/#events" class="nav-link">Events</a>
+            </li>
+            <li class="navbar-item">
+              <a href="/#contactus" class="nav-link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
   -->
 <nav class="navbar border shadow">
   <div class="brand-title">FossEvents</div>
@@ -65,23 +92,24 @@
     </ul>
   </div>
 </nav>
-<<<<<<< HEAD
 
 
-
-
-
-=======
-
-
-
->>>>>>> de455378aafc9066d137ec7de63119da0183fc11
     <!-- Navbar Ends -->
 
     <!-- Main Content -->
     <div class="container-fluid mt-5">
     <!-- Search Bar -->
-      <input class="container form-control" placeholder="Search for event here ...">
+    <div class="form-group flex-fill search-input">
+      <i class="fa fa-search icon"></i>
+      <input
+        class="form-control"
+        id="search-filter"
+        placeholder="Search for an event here"
+      />
+      <div class="autocom-box">
+        <!-- here list are inserted from javascript -->
+      </div>
+    </div>
       <!-- Card Container -->
       <div class="card-container"></div>
       <!-- Card-Container Ends -->
