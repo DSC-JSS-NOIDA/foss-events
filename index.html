@@ -72,7 +72,17 @@
     <!-- Main Content -->
     <div class="container-fluid mt-5">
     <!-- Search Bar -->
-      <input class="container form-control" placeholder="Search for event here ...">
+    <div class="form-group flex-fill search-input">
+      <i class="fa fa-search icon"></i>
+      <input
+        class="form-control"
+        id="search-filter"
+        placeholder="Search for an event here"
+      />
+      <div class="autocom-box">
+        <!-- here list are inserted from javascript -->
+      </div>
+    </div>
       <!-- Card Container -->
       <div class="card-container"></div>
       <!-- Card-Container Ends -->
