@@ -28,34 +28,49 @@
 </head>
 <body>
     <!----navbar-->
-    <nav class="navbar border shadow">
-        <div class="brand-title">FossEvents</div>
-        <a href="#" class="toggle-button">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </a>
-        <div class="navbar-links">
-          <ul>
-            <li><a class="active" href="#">Home</a></li>
-            <li><a href="/index.html">Events</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="/feedback.html">Feedback</a></li>
-            <a
-              href="https://github.com/DSC-JSS-NOIDA"
-              target="_blank"
-              ><i class="fa fa-github" id="links"></i
-            ></a>
-          </ul>
+    <nav class="navbar navbar-light bg-dark navbar-expand-md">
+      <a class="navbar-brand" href="/#aboutUs">FossEvents</a>
+
+      <div class="navbar-nav ml-auto toogle-slider">
+        <div class="custom-control custom-switch">
+          <input
+            type="checkbox"
+            class="custom-control-input"
+            id="customSwitches"
+          />
+          <label class="custom-control-label" for="customSwitches"></label>
         </div>
-      </nav>
+      </div>
+
+      <button
+        class="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#list"
+        aria-label="Toggle Navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="list">
+        <ul class="navbar-nav">
+          <li class="navbar-item">
+            <a href="/#aboutUs" class="nav-link">About Us</a>
+          </li>
+          <li class="navbar-item">
+            <a href="/#events" class="nav-link">Events</a>
+          </li>
+          <li class="navbar-item">
+            <a href="/#contactus" class="nav-link">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
       
       
     <!---end of navbar-->
 
     <!---feedback form-->
-    <section style="margin-left: 6rem;margin-right: 6rem;margin-top: 3rem;margin-bottom: 2rem; text-align: center; padding: 20px; " class="border shadow" >
+    <section style="margin-left: 6rem;margin-right: 6rem;margin-top: 5rem;margin-bottom: 2rem; text-align: center; padding: 20px; " class="border shadow" >
     
         <aside style="padding:15px">
             <h5 style="color: #000;">
