@@ -55,14 +55,14 @@ A simple website with a collection of open-source events happening across the gl
 $ git clone https://github.com/your-username/foss-events.git
 $ cd foss-events/Frontend
 ```
-- Open this folder in your favourite IDE.  <br>
+- Open this folder in your favorite IDE.  <br>
 - Run `npm install`.<br>
 - Run `git pull` command to sync with remote repo.<br>
 - Move to `data` folder and open `events.json` file.<br>
-- Now to add an event to website, add an object with keys same as listed in existing objects in the file.<br>
+- Now to add an event to  the website, add an object with keys same as listed in existing objects in the file.<br>
 - Run `npm start` for starting server.
 - Save and commit your code.<br>
-- Push to your fork of the repository , navigate to original repository and make a pull request.<br>
+- Push to your fork of the repository,navigate to the original  repository and make a pull request.<br>
 
 <strong>Backend</strong>
 > **Note**: You must have Nodejs installed 
@@ -90,7 +90,7 @@ $ cd Backend
 ![branch](https://i.postimg.cc/RVsPgQvX/Screenshot-163.png)
 
 - Get connection string from [Mongo Atlas](https://www.mongodb.com/cloud/atlas) by creating a cluster or you can also use your locally installed mongodb
-- You can click [here](https://www.youtube.com/watch?v=KKyag6t98g8&t=792s) to learn how to connect atlas to you project
+- You can click [here](https://www.youtube.com/watch?v=KKyag6t98g8&t=792s) to learn how to connect  the atlas to  your project
 - Create a new file named `.env` in the Backend folder and copy the format of `.env.example` file 
 - Paste the connection string in the `.env` file in the `DB_CONNECT` variable
 - Install node dependencies using:
@@ -105,7 +105,7 @@ $ node server
 ```
 ![start](https://i.postimg.cc/RCbf8Pn6/Screenshot-165.png)
 
-- Make changes to the code(for ex- add an update route)
+- Make changes to the code(for ex- add an  updated route)
 - Stage your changes using:
 ```
 $ git add .
