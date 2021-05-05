@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html" />
+    <title>Foss Events</title>
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./Frontend/style.css" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Preloader Class-->
+    <div class="forloader">
+      <div id="loader2"></div>
+    </div>
+    <!--Background animation-->
+    <div class="home-area" id="particles-js"></div>
+    <!-- ======= Social-Links ======= -->
+    <div class="social-icons">
+       <a href="https://www.facebook.com/dscjssnoida/" target="_blank" title="Facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+       <a href="https://www.linkedin.com/company/dsc-jssaten/" target="_blank" title="Linkedin"><i class="fa fa-linkedin-square " aria-hidden="true"></i></a>
+       <a href="https://twitter.com/DSCJSSATEN" target="_blank" title="Twitter"><i class="fa fa-twitter " aria-hidden="true"></i></a>
+       <a href="https://github.com/DSC-JSS-NOIDA" target="_blank" title="Github"><i class="fa fa-github " aria-hidden="true"></i></a>
+       <a href="https://www.instagram.com/dscjssaten/?igshid=9ubqtp1ssqsi" target="_blank" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    </div>
+    <div id="contents-page">
+      <!-- Navbar Starts -->
+      <nav class="navbar navbar-light bg-dark navbar-expand-md">
+        <a class="navbar-brand" href="/#aboutUs">FossEvents-SignIn</a>
+        <div class="navbar-nav ml-auto toogle-slider">
+          <div class="custom-control custom-switch">
+            <input
+              type="checkbox"
+              class="custom-control-input"
+              id="customSwitches"
+            />
+            <label class="custom-control-label" for="customSwitches"></label>
+          </div>
+        </div>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#list"
+          aria-label="Toggle Navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="list">
+          <ul class="navbar-nav">
+            <li class="navbar-item">
+              <a href="/#aboutUs" class="nav-link">About Us</a>
+            </li>
+            <li class="navbar-item">
+              <a href="/#events" class="nav-link">Events</a>
+            </li>
+            <li class="navbar-item">
+              <a href="/#contactus" class="nav-link">Contact Us</a>
+            </li>
+            <li class="navbar-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Navbar Ends -->
+
+
+      <div id="sign">
+        <div class="box2">
+          <h2>SignUp</h2><br>
+          <form action="index.html" method="get" enctype="multipart/form-data">
+            <div class="entry">
+              <label>Name</label>
+              <input type="text" name="" required="">
+            </div>
+            <div class="entry">
+              <label>Email ID</label><input type="email" name="" required=""></div>
+            <div class="entry">
+              <label>Password</label><input type="password" name="" required=""></div>
+            <div class="entry">
+              <label>Confirm Password</label><input type="password" name="" required=""></div>
+              <input type="submit" href="index.html" value="SignUp"><br>
+          </form>
+          <p class="prompt">Already a User?</p>
+          <a href="login.html"><input type="submit" href="login.html" value="Login"></a>
+        </div>
+      </div>
+
+
+      <script src="./Frontend/js/getEvent.js"></script>
+      <!--Particle js background-->
+      <script src="./Frontend/js/particle.js"></script>
+      <script src="./Frontend/js/app.js"></script>
+      <script src="./Frontend/js/jquery-3.2.1.min.js"></script>
+      <!-- JS, Popper.js, and jQuery -->
+      <script
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"
+      ></script>
+      <!--Preloader Script-->
+      <script>
+        $(window).on("load", function () {
+          $(".forloader").addClass("complete");
+        });
+      </script>
+    </div>
+  </body>
+</html>

@@ -824,7 +824,7 @@ footer {
   left: 0;
   height: 100vh;
   width:50vw;
-  background: #000; 
+  background: #000;
   transition: 2s;
 }
 .forloader:after{
@@ -833,7 +833,7 @@ footer {
   top: 0;
   right: 0;
   height: 100vh;
-  background: #000; 
+  background: #000;
   width:50vw;
   transition: 2s;
 }
@@ -1058,3 +1058,152 @@ span.scale-rating label:before {
   z-index: 2;
 }
 
+
+/* LOGIN page */
+
+#login{
+  height: 100vh;
+  background-size: cover;
+}
+
+.box1{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: 2vw 0 0 3vw;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    padding: 4vw;
+    background: linear-gradient(to right, #a8ff78, #78ffd6);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgb(0,0, 0, .5);
+    border-radius: 20px;
+}
+
+.box1 h2{
+    margin: 0 0 3vw;
+    padding: 0;
+    color: #fff;
+    font-size: 6vw;
+    text-align: center;
+}
+
+.box1 .entry{
+    position: relative;
+}
+
+.box1 .entry input{
+    width: 100%;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.box1 .entry label{
+    position: absolute;
+    top: -30px;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.box1 .entry input:valid ~ label{
+        color: #03a9f4;
+}
+
+.box1 input[type="submit"]{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #5ce95c;
+    padding: 10px 20px;
+
+    cursor: pointer;
+    border-radius: 5px;
+    margin: -2px 0 0 35%;
+}
+
+.prompt{
+  margin-top: 30px;
+  color: #000;
+  text-align: center;
+  font-style: italic;
+}
+
+/* SignUp Page */
+
+#sign{
+  height: 100vh;
+  background-size: cover;
+}
+
+.box2{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: 2.5vw;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    padding: 40px;
+    background: linear-gradient(to right, #a8ff78, #78ffd6);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgb(0,0, 0, .5);
+    border-radius: 20px;
+}
+
+.box2 h2{
+    padding: 0;
+    color: #fff;
+    font-size: 3vw;
+    text-align: center;
+}
+
+.box2 .entry{
+    position: relative;
+}
+
+.box2 .entry input{
+    width: 100%;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.box2 .entry label{
+    position: absolute;
+    top: -30px;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.box2 .entry input:valid ~ label{
+        color: #03a9f4;
+}
+
+.box2 input[type="submit"]{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #5ce95c;
+    margin: -2px 0 0 35%;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
