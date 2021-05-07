@@ -235,7 +235,7 @@ html {
 }
 
 label {
-  margin-left: 3px;
+  margin-left: 2rem;
   margin-bottom: 0;
 }
 
@@ -243,7 +243,7 @@ label {
 .search-input {
   margin-top: 24px !important;
   background: var(--primary-contact-background);
-  border-radius: 5px;
+  border-radius: 2rem;
   position: relative;
 }
 
@@ -288,6 +288,7 @@ label {
 
 .form-control {
   border: 1.5px solid var(--primary-input-border);
+  border-radius: 2rem;
   background-color: var(--primary-input-background);
   padding-left: 30px;
 }
