@@ -55,10 +55,6 @@ body {
   transition: 2s;
   background-color: var(--primary-background);
 }
-
-html {
-  scroll-behavior: smooth;
-}
 .social-icons{
   position: fixed;
   top: 30%;
@@ -1041,7 +1037,6 @@ span.scale-rating input[type=radio]:last-child {
 
 span.scale-rating label input[type=radio]:checked~label {
   -webkit-appearance: none;
-
   margin: 0;
   background: #fddf8d;
 }
@@ -1057,4 +1052,96 @@ span.scale-rating label:before {
   vertical-align: middle;
   z-index: 2;
 }
+.heading {
+    text-align: center;
+text-transform: uppercase;
+color: var(--primary-title);
+font-weight: 650;
+font-size: 35px;
+padding-bottom: 4px;
+}
+.line{
+    width: 50px ;
+    border-style: solid;
+    color:var(--primary-date);
+}
 
+/*-----Testimonial-------*/
+
+.testimonial {
+    min-height: 375px;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.control-prev{
+  font-size: 40px;
+ color: black var(--primary-date);
+  text-decoration: none;
+  display: inline-block;
+    background-color:limegreen;
+  padding: 5px 15px;
+  cursor: pointer;
+
+}
+.control-next{
+  font-size: 40px;
+  color: black var(--primary-date);
+  text-decoration: none;
+  display: inline-block;
+    background-color: limegreen;
+  padding: 5px 15px;
+  cursor: pointer; 
+}
+.round {
+  border-radius: 20%;
+}
+.testimonial4_slide{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 65%;
+  margin: auto;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+}
+.testimonial4_slide img {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 136px;
+    height: 136px;
+    margin: auto;
+    display: block;
+    color: black;
+    font-size: 18px;
+    line-height: 46px;
+    text-align: center;
+    position: relative;
+    border-radius: 50%;
+    border-style:solid;
+    border-color: green;
+}
+.testimonial4_slide p {
+    color: var(--primary-organisation);
+    font-family: sans-serif;
+    margin-top: 15px;
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 40px 0 20px 0;
+}
+.testimonial4_slide h4 {
+    font:bold;
+    color:cornflowerblue;
+    font-size: 24px;
+    padding-top: 20px;
+    
+}
+
+
+/* ------testimonial  close-------*/
