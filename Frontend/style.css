@@ -237,7 +237,7 @@ html {
 label {
   margin-left: 2rem;
   margin-bottom: 0;
-}
+  }
 
 
 .search-input {
@@ -290,7 +290,9 @@ label {
   border: 1.5px solid var(--primary-input-border);
   border-radius: 2rem;
   background-color: var(--primary-input-background);
+  background-color: var(--primary-contact-background);
   padding-left: 30px;
+  color: #696969;
 }
 
 .form-control:focus {
@@ -302,6 +304,10 @@ label {
 .form-group i {
   position: absolute;
   font-family: Apple Chancery, cursive;
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(0.5);
 }
 
 .icon {
@@ -504,13 +510,13 @@ footer {
 
 .background-cont {
   background: rgb(246, 231, 231);
-  background: radial-gradient(
-    circle,
-    rgba(246, 231, 231, 0.5242471988795518) 0%,
-    rgba(225, 237, 237, 1) 16%
-  );
-  box-shadow: 6px 7px 12px green;
-  padding-bottom: 2%;
+  background: linear-gradient(-20deg,#6fcc6f,#80c580, #83c783, #8fce8f, #c8dc9c,#65b97a,#5cb85c,#54a154);
+  box-shadow: 6px 7px 12px rgb(123, 146, 123);
+  padding: 2%;
+  margin-left: 80px;
+  width: 92%;
+  border-radius: 15px;
+  
 }
 
 .social-icon {
