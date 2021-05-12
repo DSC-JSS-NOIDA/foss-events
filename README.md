@@ -29,7 +29,7 @@ $ npm install
 
 - To start the server, type:
 ```
-$ node server
+$ node server.js
 ```
 ![start](https://i.postimg.cc/RCbf8Pn6/Screenshot-165.png)
 
