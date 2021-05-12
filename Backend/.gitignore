@@ -1,4 +1,1 @@
-app.json
-.env
-node_modules
-Procfile
+/node_modules
