@@ -382,13 +382,38 @@ label {
 
 .event_card .btn {
   position: relative;
-  background-color: #5cb85c;
+  background-color: rgb(128, 122, 122);
   border: 1px solid #5cb85c;
-  transition: all 1s ease;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
 }
 .event_card .btn:hover {
-  opacity: 0.9;
-  transform: scale(1.1);
+  color: white;
+  background-color: rgb(44, 209, 44);
+}
+.event_card .btn:after {
+  content: '';
+  background: #00ff00;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.4s;
+}
+.event_card .btn:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
 }
 
 .date {
