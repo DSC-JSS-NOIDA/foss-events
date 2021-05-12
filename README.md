@@ -43,6 +43,7 @@ $ git commit -m "made changes"
 
 <strong>Currently working Routes</strong>
   - Get Routes:
+      - / - Home page of the foss-events
       - /event - Displays all the events
       - /event/:title - Displays the deatils of the specific event
   - Post Routes:
