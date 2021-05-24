@@ -73,6 +73,8 @@ html {
   padding: 10px;
   font-size: 22px;
   margin: 2px;
+  /*made margin left to be 0 to avoid jiggling when icon is hovered*/
+  margin-left: 0;
   border-radius: 0 50px 50px 0;
   transform: translate(-34px,0);
   transition: all 0.5s;
