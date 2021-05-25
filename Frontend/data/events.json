@@ -300,8 +300,16 @@
     "organisation": "HackinCodes",
     "location": "Online"
 
-  }    
+  },   
+  {
+    "title": "LetsGrowMore-summerofcode",
+    "website": "https://letsgrowmore.in/soc/",
+    "start": "15/05/2021",
+    "end": "18/07/2021",
+    "organisation": "LetsGrowMore",
+    "location": "Online"
 
+  }
 
 
 ]
