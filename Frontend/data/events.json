@@ -57,6 +57,7 @@
   },
     {
     "title": "GIRLSCRIPT SUMMER OF CODE",
+    "logo" : "url(frontend/data/img/gssoc.png)",
     "website": "gssoc.girlscript.tech/",
     "start": "10/03/2021",
     "end": "31/05/2021",
@@ -300,7 +301,18 @@
     "organisation": "HackinCodes",
     "location": "Online"
 
-  }    
+  },
+  {
+    "title": "ICFOSS",
+    "website": "icfoss.in/index.php/event/foss-innovation-fellowship-programme",
+    "start": "01/10/2021",
+    "end": "07/10/2021",
+    "organisation": "Government of Kerala",
+    "location": "Offline"
+
+  }
+  
+
 
 
 
