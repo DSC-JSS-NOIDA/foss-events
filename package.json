@@ -19,5 +19,8 @@
   "homepage": "https://github.com/DSC-JSS-NOIDA/foss-events#readme",
   "dependencies": {
     "live-server": "^1.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.27.0"
   }
 }
