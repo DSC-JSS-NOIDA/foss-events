@@ -283,7 +283,6 @@ window.addEventListener("scroll", () => {
 
 window.addEventListener("DOMContentLoaded", function () {
   // get the form elements defined in your form HTML above
-
   var form = document.getElementById("my-form");
   var name = document.getElementById("validationCustom01");
   var email = document.getElementById("validationCustom02");
@@ -291,17 +290,21 @@ window.addEventListener("DOMContentLoaded", function () {
   // var button = document.getElementById("my-form-button");
   var status = document.getElementById("status");
   // Success and Error functions for after the form is submitted
-
+  
   function success() {
+    status.classList.remove("error");
+    status.classList.remove("success");
     form.value='';
     name.value='';
     email.value='';
     message.value='';
     status.classList.add("success");
-    status.innerHTML = "Thanks!";
+    status.innerHTML = "Thanks!Your message is submitted successfully";
   }
 
   function error() {
+    status.classList.remove("error");
+    status.classList.remove("success");
     status.classList.add("error");
     status.innerHTML = "Oops! There was a problem.";
   }

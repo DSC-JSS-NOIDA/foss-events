@@ -4,6 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Type" content="text/html" />
+    <script class="one">
+        function startTime() {
+          var today = new Date();
+          var h = today.getHours();
+          var m = today.getMinutes();
+          var s = today.getSeconds();
+          m = checkTime(m);
+          s = checkTime(s);
+          document.getElementById('txt').innerHTML =
+          h + ":" + m + ":" + s;
+          var t = setTimeout(startTime, 500);
+        }
+        function checkTime(i) {
+          if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+          return i;
+        }
+        </script>
     <title>Foss Events</title>
     <link
       rel="apple-touch-icon"
@@ -35,6 +52,7 @@
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   </head>
   <body>
     <!-- Preloader Class-->
@@ -45,30 +63,17 @@
     <div class="home-area" id="particles-js"></div>
     <!-- ======= Social-Links ======= -->
     <div class="social-icons">
-      <a
-        href="https://www.facebook.com/dscjssnoida/"
-        target="_blank"
-        title="Facebook"
-        ><i class="fa fa-facebook-square" aria-hidden="true"></i
-      ></a>
-      <a
-        href="https://www.linkedin.com/company/dsc-jssaten/"
-        target="_blank"
-        title="Linkedin"
-        ><i class="fa fa-linkedin-square" aria-hidden="true"></i
-      ></a>
-      <a href="https://twitter.com/DSCJSSATEN" target="_blank" title="Twitter"
-        ><i class="fa fa-twitter" aria-hidden="true"></i
-      ></a>
-      <a href="https://github.com/DSC-JSS-NOIDA" target="_blank" title="Github"
-        ><i class="fa fa-github" aria-hidden="true"></i
-      ></a>
-      <a
-        href="https://www.instagram.com/dscjssaten/?igshid=9ubqtp1ssqsi"
-        target="_blank"
-        title="Instagram"
-        ><i class="fa fa-instagram" aria-hidden="true"></i
-      ></a>
+
+
+       <a href="https://www.facebook.com/dscjssnoida/" target="_blank" title="Facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+       <a href="https://www.linkedin.com/company/dsc-jssaten/" target="_blank" title="Linkedin"><i class="fa fa-linkedin-square " aria-hidden="true"></i></a>
+       <a href="https://twitter.com/DSCJSSATEN" target="_blank" title="Twitter"><i class="fa fa-twitter " aria-hidden="true"></i></a>
+       <a href="https://github.com/DSC-JSS-NOIDA" target="_blank" title="Github"><i class="fa fa-github " aria-hidden="true"></i></a>
+       <a href="https://www.instagram.com/dscjssaten/?igshid=9ubqtp1ssqsi" target="_blank" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+       <a href="https://www.dscjss.in/" target="_blank" title="Website"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+       <a href="https://medium.com/dsc-jss-noida" target="_blank" title="Blog"><i class="fa fa-medium" aria-hidden="true"></i></a>
+       <a href="https://www.youtube.com/channel/UCkELk5JFDceaSf8pBa19kDQ" target="_blank" title="YouTube"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+
     </div>
     <div id="contents-page">
       <!-- Navbar Starts -->
@@ -110,6 +115,7 @@
       <!-- Navbar Ends -->
       <!-- Main Content -->
 
+
       <div class="container" id="aboutUs">
         <div id="box">
           <h1 id="mainHeading" class="pb-3">
@@ -126,23 +132,45 @@
             easy for you to know about any organization. Hope you like our
             services. Cheers.
           </p>
+
+      
+<!--
+      <div class="container" id="aboutUs">
+        
+        <div id="box"> 
+          <h1 id="mainHeading" class="pb-3">Searching for an open source organization? Here we are!</h1>
+          <hr style="border: 1px solid #5cb85c;">
+          <p id="paraGraph">Greetings! Hope you all are doing good. Want to contribute to open source and don't know what organization to search? Welcome to our website, we keep track on nearly every open source organization. We post every necessary details related to any particular organization you want to contribute in, whether is it active or not, their registration details, their page link and so on. It will be super easy for you to know about any organization. Hope you like our services. Cheers.</p>
+
         </div>
       </div>
-
+-->
+<div class="container" id="aboutUs">
+  <div class="row" id="box">
+    <div class="col-6 md">
+      <h1 id="mainHeading" class="pb-3">Searching for an open source organization? Here we are!</h1>
+      <hr style="border: 1px solid #5cb85c;">
+      <p id="paraGraph">Greetings! Hope you all are doing good. Want to contribute to open source and don't know what organization to search? Welcome to our website, we keep track on nearly every open source organization. We post every necessary details related to any particular organization you want to contribute in, whether is it active or not, their registration details, their page link and so on. It will be super easy for you to know about any organization. Hope you like our services. Cheers.</p>
+    </div>
+    <div class="col-6 md">
+      <img src="Frontend/data/img/About us page-bro.svg" />
+    </div>
+  </div>
+</div>
       <div class="container-fluid mt-5" id="events">
         <!-- Events Filter -->
 
         <div class="background-cont">
           <div class="d-flex filter-container">
             <!-- Search Filter -->
-
             <div class="form-group flex-fill search-input">
-              <i class="fa fa-search icon"></i>
+              <i class="fa fa-search icon" style="color: #696969"></i>
               <input
                 class="form-control"
                 id="search-filter"
                 placeholder="Search for an event here"
               />
+              
               <div class="autocom-box">
                 <!-- here list are inserted from javascript -->
               </div>
@@ -398,4 +426,4 @@
       </script>
     </div>
   </body>
-</html>
+</html
