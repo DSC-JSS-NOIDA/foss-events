@@ -309,7 +309,15 @@
     "organisation": "osoc",
     "location": "Online"
 
-  }    
+  },
+  {
+    "title": "Girlscript winter of code",
+    "website": "https://gwoc.girlscript.tech/",
+    "start": "01/08/2021",
+    "end": "01/12/2021",
+    "organisation": "girlscript",
+    "location": "Online"
+  }   
     
 
 
