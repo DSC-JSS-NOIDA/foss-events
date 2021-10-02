@@ -1,6 +1,6 @@
 ## GIT AND GITHUB
 
-Before continuing we want to clarify the difference between Git and Github. Git is a version control system(VCS) which is a tool to manage the history of our Source Code. GitHub is a hosting service for Git projects.
+Before continuing we want to clarify the difference between Git and Github. Git is a version control system(VCS) which is a tool to manage the history of our Source Code. GitHub is a hosting/web service for social coding and open source contributions.
 
 We assume you have created an account on Github and installed Git on your System.
 
@@ -90,7 +90,7 @@ Till this point you have a new branch with the feature or bugfix you want in the
 
 ```$ git push origin <feature-branch>```
     
-Now you are ready to help the project by opening a pull request means you now tell the project managers to add the feature or bugfix to original repository. You can open a pull request by clicking on green icon -
+Now you are ready to help the project by opening a pull request that means you now request project managers to add the features or bugfix to original repository. You can open a pull request by clicking on green icon -
 
 <p align="center">  <img  src="https://i.imgur.com/aGaqAD5.png">  </p>
 
