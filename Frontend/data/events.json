@@ -318,5 +318,13 @@
     "end": "26/10/2021",
     "organisation": "Vercel",
     "location": "Online"
+  },
+  {
+    "title": "ETHIndia Fellowship",
+    "website": "https://eif3.devfolio.co/",
+    "start": "03/02/2023",
+    "end": "02/04/2023",
+    "organisation": "Devfolio",
+    "location": "Online"
   }
 ]
