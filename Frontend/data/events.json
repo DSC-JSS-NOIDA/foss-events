@@ -326,5 +326,13 @@
     "end": "19/01/2023",
     "organisation": "The Linux Foundation",
     "location": "Online"
+  },
+  {
+    "title": "Linux Foundation Legal Summit",
+    "website": "https://events.linuxfoundation.org/lf-legal-summit/",
+    "start": "14/02/2023",
+    "end": "15/02/2023",
+    "organisation": "The Linux Foundation",
+    "location": "Online"
   }
 ]
