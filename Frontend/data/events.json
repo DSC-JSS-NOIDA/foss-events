@@ -318,5 +318,13 @@
     "end": "26/10/2021",
     "organisation": "Vercel",
     "location": "Online"
+  },
+  {
+    "title": "LFX Mentorship Showcase",
+    "website": "https://events.linuxfoundation.org/lfx-mentorship-showcase/",
+    "start": "18/01/2023",
+    "end": "19/01/2023",
+    "organisation": "The Linux Foundation",
+    "location": "Online"
   }
 ]
