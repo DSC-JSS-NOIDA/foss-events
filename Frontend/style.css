@@ -123,11 +123,27 @@ html {
 }
 
 #mainHeading {
+
   color: #5cb85c;
   font-size: 40px;
   font-family: 'Courier New', Courier, monospace;
   font-weight: bolder;
+  
 }
+.pb-3{
+  
+    animation: colorFlow 3s infinite;
+  }
+  
+  @keyframes colorFlow {
+    0% { color: #4CAF50; }      /* Light green */
+    25% { color: #2E7D32; }     /* Medium green */
+    50% { color: #2d9434; }     /* Dark green */
+    75% { color: #388E3C; }     /* Another shade of green */
+    100% { color: #66BB6A; }    /* Yet another shade of green */
+  }
+
+
 
 
 #paraGraph{
